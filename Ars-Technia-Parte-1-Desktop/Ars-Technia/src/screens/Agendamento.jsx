@@ -2,9 +2,12 @@
 import React from 'react';
 
 export default function Agendamento({
+  initialData = null,
   onBack = () => {},
   onFinish = () => {}
 }) {
+  const visualizando = initialData !== null;
+
   return (
     <div className="standalone">
 
@@ -26,15 +29,20 @@ export default function Agendamento({
 
       <form
         className="standalone-form"
-        onSubmit={e => {
+        onSubmit={(e) => {
           e.preventDefault();
-          onFinish();
+
+          if (!visualizando) {
+            onFinish();
+          }
         }}
       >
         <label>
           Nome do professor *
           <input
             required
+            readOnly={visualizando}
+            defaultValue={initialData?.professor || ''}
             placeholder="Ex.: Marcos/Caique"
           />
         </label>
@@ -43,6 +51,8 @@ export default function Agendamento({
           Quantidade alunos *
           <input
             required
+            readOnly={visualizando}
+            defaultValue={initialData?.alunos || ''}
             placeholder="Ex.: Máx.20"
           />
         </label>
@@ -51,6 +61,8 @@ export default function Agendamento({
           Local / Setor *
           <input
             required
+            readOnly={visualizando}
+            defaultValue={initialData?.sala || ''}
             placeholder="Ex.: Sala 02 / Administração"
           />
         </label>
@@ -59,17 +71,54 @@ export default function Agendamento({
           Descrição do evento *
           <textarea
             required
+            readOnly={visualizando}
+            defaultValue={initialData?.descricao || ''}
             placeholder="Ex.: Local reservado para aulas práticas[...]"
           />
         </label>
 
-        <p>Os campos com * são obrigatórios.</p>
+        {visualizando && (
+          <>
+            <label>
+              Data
+              <input
+                readOnly
+                defaultValue={initialData.data || ''}
+              />
+            </label>
 
-        <button className="blue-wide" type="submit">
-          Cadastrar
-        </button>
+            <label>
+              Horário
+              <input
+                readOnly
+                defaultValue={initialData.horario || ''}
+              />
+            </label>
+
+            <label>
+              Status da solicitação
+              <input
+                readOnly
+                defaultValue={initialData.status || ''}
+              />
+            </label>
+          </>
+        )}
+
+        {!visualizando && (
+          <>
+            <p>Os campos com * são obrigatórios.</p>
+
+            <button
+              className="blue-wide"
+              type="submit"
+            >
+              Cadastrar
+            </button>
+          </>
+        )}
+
       </form>
-
     </div>
   );
 }

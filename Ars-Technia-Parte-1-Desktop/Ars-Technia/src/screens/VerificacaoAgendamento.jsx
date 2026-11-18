@@ -5,7 +5,7 @@ import Heading from '../components/Heading.jsx';
 const requests = [
   {
     professor: 'Alexia Vitória',
-    email: 'Alexia@gmail.com',
+    email: 'professor@arstechnia.com',
     sala: 'Sala 14',
     data: '13/11/2026',
     horario: '08:30 às 11:30',
@@ -13,8 +13,8 @@ const requests = [
     descricao: 'Aula prática com a turma.',
   },
   {
-    professor: 'Jéssica Almeida',
-    email: 'jessica@gmail.com',
+    professor: 'Alexia Vitória',
+    email: 'professor@arstechnia.com',
     sala: 'Laboratório de Informática',
     data: '14/11/2026',
     horario: '13:00 às 16:00',
@@ -22,8 +22,8 @@ const requests = [
     descricao: 'Atividade de informática.',
   },
   {
-    professor: 'Carlos Eduardo',
-    email: 'carlos@gmail.com',
+    professor: 'Alexia Vitória',
+    email: 'professor@arstechnia.com',
     sala: 'Sala 08',
     data: '15/11/2026',
     horario: '09:00 às 12:00',
@@ -42,47 +42,82 @@ export default function VerificacaoAgendamento({
   return (
     <>
       <Heading
-        eyebrow="ÁREA DE GESTÃO"
+        eyebrow="GESTÃO"
         title="Verificação de Agendamento"
-        desc="Confira os dados enviados pelo professor antes de registrar sua decisão."
+        desc="Informações de solicitação de Agendamento, verifique-as"
       />
 
       <section className="verify-panel">
-        <h2>Dados da solicitação</h2>
 
-        <div className="verify-grid">
-          <div><small>Professor</small><b>{p.professor}</b></div>
-          <div><small>E-mail</small><b>{p.email}</b></div>
-          <div><small>Sala solicitada</small><b>{p.sala}</b></div>
-          <div><small>Data</small><b>{p.data}</b></div>
-          <div><small>Horário</small><b>{p.horario}</b></div>
-          <div><small>Quantidade de alunos</small><b>{p.alunos}</b></div>
-        </div>
+        <div className="verify-form">
 
-        <div className="verify-description">
-          <small>Descrição da atividade</small>
-          <p>{p.descricao}</p>
-        </div>
+          <div className="verify-field">
+            <label>Nome do professor *</label>
+            <div className="verify-value">
+              {p.professor}
+            </div>
+          </div>
 
-        <div className="verify-actions">
-          <button className="accept" onClick={() => onDecision('Aceita')}>
-            Aceitar
-          </button>
+          <div className="verify-field">
+            <label>Quantidade alunos *</label>
+            <div className="verify-value">
+              {p.alunos}
+            </div>
+          </div>
 
-          <button className="deny" onClick={() => onDecision('Recusada')}>
-            Negar
-          </button>
+          <div className="verify-field">
+            <label>Local / Setor *</label>
+            <div className="verify-value">
+              {p.sala}
+            </div>
+          </div>
 
-          <button
-            className="maintenance"
-            onClick={() => onDecision('Em manutenção')}
-          >
-            Em Manutenção
-          </button>
+          <div className="verify-field">
+            <label>Descrição do evento *</label>
+            <div className="verify-description">
+              {p.descricao}
+            </div>
+          </div>
+
+          <div className="verify-extra-info">
+            <span>Data: {p.data}</span>
+            <span>Horário: {p.horario}</span>
+            <span>E-mail: {p.email}</span>
+          </div>
+
+          <div className="verify-actions">
+            <button
+              type="button"
+              className="accept"
+              onClick={() => onDecision('Aceita')}
+            >
+              Aceitar
+            </button>
+
+            <button
+              type="button"
+              className="deny"
+              onClick={() => onDecision('Recusada')}
+            >
+              Negar
+            </button>
+
+            <button
+              type="button"
+              className="maintenance"
+              onClick={() => onDecision('Em manutenção')}
+            >
+              Manutenção
+            </button>
+          </div>
+
         </div>
       </section>
 
-      <button className="back-link" onClick={() => go('solicitacaoGestao')}>
+      <button
+        className="back-link"
+        onClick={() => go('solicitacaoGestao')}
+      >
         ← Voltar para solicitações
       </button>
     </>

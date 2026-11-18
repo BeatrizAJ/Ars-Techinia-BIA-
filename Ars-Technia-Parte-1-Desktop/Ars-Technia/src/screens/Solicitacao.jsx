@@ -4,25 +4,34 @@ import Heading from '../components/Heading.jsx';
 
 const solicitacoes = [
   {
+    professor: 'Alexia Vitória',
     sala: 'Sala 14',
     data: '13/11/2026',
     horario: '08:30 às 11:30',
+    alunos: '25 alunos',
+    descricao: 'Aula prática com a turma.',
     status: 'Aguardando análise',
     classe: 'pending',
     icone: '/assets/Manutencao.png'
   },
   {
+    professor: 'Alexia Vitória',
     sala: 'Laboratório de Informática',
     data: '10/11/2026',
     horario: '13:00 às 16:00',
+    alunos: '30 alunos',
+    descricao: 'Atividade de informática.',
     status: 'Solicitação aceita',
     classe: 'approved',
     icone: '/assets/Verificado.png'
   },
   {
+    professor: 'Alexia Vitória',
     sala: 'Sala 08',
     data: '08/11/2026',
     horario: '09:00 às 12:00',
+    alunos: '20 alunos',
+    descricao: 'Aula de reforço.',
     status: 'Solicitação recusada',
     classe: 'rejected',
     icone: '/assets/Negado.png'
@@ -78,7 +87,7 @@ export default function Solicitacao({ go, onDetails }) {
 
               <button
                 className="primary-button"
-                onClick={() => onDetails(index)}
+                onClick={() => onDetails(item)}
               >
                 Ver Detalhes
               </button>
@@ -96,6 +105,7 @@ export default function Solicitacao({ go, onDetails }) {
             </span>
 
             <h3>Acompanhe seus pedidos</h3>
+
             <p>
               Você pode consultar o andamento das suas solicitações
               e verificar as respostas enviadas pela Gestão.

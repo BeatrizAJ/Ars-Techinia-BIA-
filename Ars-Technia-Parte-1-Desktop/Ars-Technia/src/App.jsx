@@ -16,23 +16,6 @@ import TelaInicial from './screens/TelaInicial.jsx';
 import TelaInicialGESTAO from './screens/TelaInicialGESTAO.jsx';
 import VerificacaoAgendamento from './screens/VerificacaoAgendamento.jsx';
 
-const MANAGER_ROUTES = [
-  'homeManager',
-  'solicitacaoGestao',
-  'managerNotifications',
-  'managerProfile',
-  'cadastroSalas',
-  'rooms',
-];
-
-const PROFESSOR_ROUTES = [
-  'home',
-  'solicitacao',
-  'notifications',
-  'agendamento',
-  'booking',
-];
-
 const SALAS_INICIAIS = [
   {
     nome: 'Sala 14',
@@ -110,11 +93,6 @@ function getCurrentPage() {
 }
 
 function getInitialRole() {
-  const route = getCurrentPage();
-
-  if (MANAGER_ROUTES.includes(route)) return true;
-  if (PROFESSOR_ROUTES.includes(route)) return false;
-
   return sessionStorage.getItem('ars-role') === 'gestao';
 }
 
@@ -128,15 +106,14 @@ function getSavedPhotos() {
 export default function App() {
   const [page, setPage] = useState(getCurrentPage);
   const [manager, setManager] = useState(getInitialRole);
+
   const [decision, setDecision] = useState('Aguardando análise');
   const [selectedRequest, setSelectedRequest] = useState(0);
+  const [selectedBooking, setSelectedBooking] = useState(null);
 
   const [profilePhotos, setProfilePhotos] = useState(getSavedPhotos);
-
-  // Lista centralizada de salas
   const [salas, setSalas] = useState(SALAS_INICIAIS);
 
-  // Índice da sala que está sendo editada
   const [editingRoomIndex, setEditingRoomIndex] = useState(
     () => getRouteInfo().editingIndex
   );
@@ -196,20 +173,12 @@ export default function App() {
     reader.readAsDataURL(file);
   };
 
-  // Atualiza a tela quando a rota muda
   useEffect(() => {
     const syncPage = () => {
       const routeInfo = getRouteInfo();
-      const nextPage = routeInfo.page;
 
-      setPage(nextPage);
+      setPage(routeInfo.page);
       setEditingRoomIndex(routeInfo.editingIndex);
-
-      if (MANAGER_ROUTES.includes(nextPage)) {
-        changeRole(true);
-      } else if (PROFESSOR_ROUTES.includes(nextPage)) {
-        changeRole(false);
-      }
     };
 
     window.addEventListener('hashchange', syncPage);
@@ -221,10 +190,10 @@ export default function App() {
 
   const finish = (message) => {
     window.alert(message);
+    setSelectedBooking(null);
     go(manager ? 'homeManager' : 'home');
   };
 
-  // Cadastra uma sala ou atualiza a sala selecionada
   const salvarSala = (dadosSala) => {
     if (editingRoomIndex !== null) {
       setSalas((anteriores) =>
@@ -257,7 +226,14 @@ export default function App() {
     go('homeManager');
   };
 
-  const openVerification = (index = 0) => {
+  // Abre os detalhes do agendamento selecionado pelo professor.
+  const openProfessorBooking = (booking) => {
+    setSelectedBooking(booking);
+    go('agendamento');
+  };
+
+  // Abre a verificação de solicitações da Gestão.
+  const openManagerVerification = (index = 0) => {
     setSelectedRequest(index);
     go('verificacao');
   };
@@ -285,8 +261,15 @@ export default function App() {
     return (
       <div className="booking-background">
         <Agendamento
-          go={go}
-          onBack={() => go(manager ? 'homeManager' : 'home')}
+          initialData={selectedBooking}
+          onBack={() => {
+            if (selectedBooking) {
+              setSelectedBooking(null);
+              go('solicitacao');
+            } else {
+              go(manager ? 'homeManager' : 'home');
+            }
+          }}
           onFinish={() =>
             finish('Solicitação cadastrada com sucesso!')
           }
@@ -301,10 +284,7 @@ export default function App() {
     case 'home':
     case 'homeManager':
       content = manager ? (
-        <TelaInicialGESTAO
-          go={go}
-          salas={salas}
-        />
+        <TelaInicialGESTAO go={go} salas={salas} />
       ) : (
         <TelaInicial go={go} />
       );
@@ -365,7 +345,7 @@ export default function App() {
         <Solicitacao
           go={go}
           decision={decision}
-          onDetails={openVerification}
+          onDetails={openProfessorBooking}
         />
       );
       break;
@@ -375,7 +355,7 @@ export default function App() {
       content = (
         <SolicitacaoGESTAO
           go={go}
-          onDetails={openVerification}
+          onDetails={openManagerVerification}
         />
       );
       break;
@@ -392,10 +372,7 @@ export default function App() {
 
     default:
       content = manager ? (
-        <TelaInicialGESTAO
-          go={go}
-          salas={salas}
-        />
+        <TelaInicialGESTAO go={go} salas={salas} />
       ) : (
         <TelaInicial go={go} />
       );
