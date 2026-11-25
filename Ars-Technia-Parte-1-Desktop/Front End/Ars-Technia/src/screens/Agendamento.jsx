@@ -4,8 +4,8 @@ import React, { useEffect, useState } from 'react';
 export default function Agendamento({
   initialData = null,
   profileData,
-  onBack = () => {},
-  onFinish = () => {},
+  onBack = () => { },
+  onFinish = () => { },
 }) {
   const novoAgendamento = initialData?.tipo === 'novo';
   const visualizando = initialData !== null && !novoAgendamento;
@@ -53,10 +53,29 @@ export default function Agendamento({
     profileData?.nome
   ]);
 
+  // Gera os horários disponíveis de 30 em 30 minutos.
+  const horariosDisponiveis = Array.from(
+    { length: 23 },
+    (_, index) => {
+      const horas = 8 + Math.floor(index / 2);
+      const minutos = index % 2 === 0 ? '00' : '30';
+
+      return `${String(horas).padStart(2, '0')}:${minutos}`;
+    }
+  );
+
   const enviarFormulario = (e) => {
     e.preventDefault();
 
     if (!visualizando) {
+
+      if (!horariosDisponiveis.includes(horario)) {
+        window.alert(
+          'Horário inválido! Escolha um horário entre 08:00 e 19:00.'
+        );
+        return;
+      }
+
       onFinish({
         professor: nomeProfessor,
         alunos: quantidade,
@@ -157,14 +176,28 @@ export default function Agendamento({
 
         <label>
           Horário *
-          <input
-            type="time"
+          <select
+            className="horario-select"
             required
-            readOnly={visualizando}
+            disabled={visualizando}
             value={horario}
             onChange={(e) => setHorario(e.target.value)}
-          />
+          >
+            <option value="">--:--</option>
+
+            {horariosDisponiveis.map((hora) => (
+              <option key={hora} value={hora}>
+                {hora}
+              </option>
+            ))}
+          </select>
         </label>
+
+        {!visualizando && (
+          <p>
+            Horários disponíveis: das 08:00 às 19:00.
+          </p>
+        )}
 
         {visualizando && (
           <label>
