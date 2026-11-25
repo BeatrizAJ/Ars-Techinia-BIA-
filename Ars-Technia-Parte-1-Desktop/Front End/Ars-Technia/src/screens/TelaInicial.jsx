@@ -38,24 +38,26 @@ export default function TelaInicial({
   };
 
   return (
-    <>
+    <div className="home-page">
+
+      <div className="welcome">
+        Olá, {nomeUsuario}
+      </div>
+
       <Heading
         title="Minhas salas"
         desc="Encontre uma sala e consulte as informações para realizar sua reserva."
       />
-
-      <div className="welcome">
-        Olá, {nomeUsuario}!
-      </div>
 
       <div className="home-title-row">
         <div className="search-box">
           <span className="icon">⌕</span>
 
           <input
+            type="text"
             value={busca}
             onChange={(e) => setBusca(e.target.value)}
-            placeholder="Pesquisar sala..."
+            placeholder="Buscar por salas, eventos e aulas"
           />
         </div>
       </div>
@@ -99,6 +101,7 @@ export default function TelaInicial({
             </span>
 
             <b>{sala.nome}</b>
+
             <p>{sala.local}</p>
           </button>
         ))}
@@ -109,6 +112,7 @@ export default function TelaInicial({
           Nenhuma sala encontrada.
         </div>
       )}
-    </>
+
+    </div>
   );
 }

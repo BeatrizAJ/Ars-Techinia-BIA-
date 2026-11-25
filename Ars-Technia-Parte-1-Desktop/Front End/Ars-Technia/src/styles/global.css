@@ -1,3 +1,6 @@
+/* ==========================================
+   1. FONTES E CONFIGURAÇÕES GERAIS
+========================================== */
 
 @font-face {
     font-family: Montserrat;
@@ -53,7 +56,10 @@ button {
     background: linear-gradient(115deg, #a6bcc9 0%, #e7e5e1 43%, #fff4eb 78%);
 }
 
-/* HEADER */
+
+/* ==========================================
+   2. HEADER
+========================================== */
 
 .topbar {
     width: 100%;
@@ -111,8 +117,6 @@ button {
     width: 25px;
 }
 
-/* FOTO DO HEADER */
-
 .topbar .avatar {
     width: 48px !important;
     height: 48px !important;
@@ -120,18 +124,14 @@ button {
     min-height: 48px !important;
     max-width: 48px !important;
     max-height: 48px !important;
-
     padding: 0 !important;
     margin: 0 !important;
-
     border: none !important;
     border-radius: 50% !important;
     background: #f8dcb8;
-
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-
     overflow: hidden !important;
     flex: 0 0 48px !important;
     box-sizing: border-box !important;
@@ -145,14 +145,11 @@ button {
     min-height: 100% !important;
     max-width: none !important;
     max-height: none !important;
-
     padding: 0 !important;
     margin: 0 !important;
-
     display: block !important;
     object-fit: cover !important;
     object-position: center !important;
-
     border: none !important;
     border-radius: 50% !important;
 }
@@ -163,7 +160,10 @@ button {
     font-weight: 600;
 }
 
-/* ESTRUTURA PRINCIPAL */
+
+/* ==========================================
+   3. ESTRUTURA PRINCIPAL E MENU
+========================================== */
 
 .body-shell {
     display: flex;
@@ -229,8 +229,6 @@ button {
     font-size: 11px;
 }
 
-/* FOTOS DE PERFIL */
-
 .profile-placeholder {
     width: 120px;
     height: 120px;
@@ -292,7 +290,10 @@ button {
     padding: 40px 40px 50px;
 }
 
-/* TÍTULOS */
+
+/* ==========================================
+   4. TÍTULOS E CABEÇALHOS DE PÁGINA
+========================================== */
 
 .page-heading {
     margin-bottom: 32px;
@@ -311,13 +312,6 @@ button {
     line-height: 1.15;
     margin: 0 0 10px;
     font-weight: 700;
-}
-
-.request-status img {
-    width: 18px;
-    height: 18px;
-    object-fit: contain;
-    display: block;
 }
 
 .page-heading p {
@@ -343,7 +337,10 @@ button {
     white-space: nowrap;
 }
 
-/* PESQUISA */
+
+/* ==========================================
+   5. PESQUISA
+========================================== */
 
 .search-box {
     height: 50px;
@@ -381,7 +378,10 @@ button {
     margin-left: 0;
 }
 
-/* FILTROS */
+
+/* ==========================================
+   6. FILTROS
+========================================== */
 
 .filters {
     display: flex;
@@ -403,7 +403,10 @@ button {
     color: #fff;
 }
 
-/* SALAS */
+
+/* ==========================================
+   7. CARDS DE SALAS
+========================================== */
 
 .results-head {
     display: flex;
@@ -496,7 +499,10 @@ button {
     padding: 20px;
 }
 
-/* NOTIFICAÇÕES */
+
+/* ==========================================
+   8. NOTIFICAÇÕES
+========================================== */
 
 .notification-layout {
     display: grid;
@@ -530,6 +536,13 @@ button {
     place-items: center;
     font-size: 24px;
     margin-top: 0;
+}
+
+.request-status img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    display: block;
 }
 
 .approved {
@@ -650,7 +663,10 @@ button {
     background: #d83d3d;
 }
 
-/* PERFIL */
+
+/* ==========================================
+   9. PERFIL DO PROFESSOR
+========================================== */
 
 .profile-card {
     max-width: 790px;
@@ -667,8 +683,6 @@ button {
     gap: 88px;
     margin: 0 0 40px;
 }
-
-/* Foto de perfil */
 
 .profile-top .profile-placeholder {
     width: 120px;
@@ -773,7 +787,10 @@ button {
     background: #fff4eb;
 }
 
-/* EDITAR PERFIL */
+
+/* ==========================================
+   10. EDIÇÃO DE PERFIL
+========================================== */
 
 .edit-user {
     min-height: 138px;
@@ -949,7 +966,10 @@ button {
     font-size: 17px;
 }
 
-/* SESSÃO */
+
+/* ==========================================
+   11. SESSÃO
+========================================== */
 
 .session-panel {
     max-width: 750px;
@@ -981,7 +1001,10 @@ button {
     font-weight: 700;
 }
 
-/* DETALHES DO LOCAL */
+
+/* ==========================================
+   12. DETALHES DO LOCAL
+========================================== */
 
 .details-layout {
     display: grid;
@@ -1087,7 +1110,10 @@ button {
     font-size: 16px;
 }
 
-/* FORMULÁRIOS */
+
+/* ==========================================
+   13. FORMULÁRIOS
+========================================== */
 
 .verify-panel,
 .rooms-form,
@@ -1165,7 +1191,10 @@ button {
     margin: 14px 0 26px;
 }
 
-/* CAMPO DE IMAGEM DA TELA CADASTRO DE SALAS */
+
+/* ==========================================
+   14. CADASTRO DE SALAS - IMAGEM
+========================================== */
 
 .rooms-form input[type="file"] {
     display: none !important;
@@ -1213,7 +1242,10 @@ button {
     gap: 20px;
 }
 
-/* TELAS INDEPENDENTES */
+
+/* ==========================================
+   15. TELAS INDEPENDENTES
+========================================== */
 
 .standalone {
     max-width: 1136px;
@@ -1233,7 +1265,10 @@ button {
     margin-top: 0;
 }
 
-/* LOGIN E CADASTRO */
+
+/* ==========================================
+   16. LOGIN E CADASTRO
+========================================== */
 
 .auth-page {
     min-height: 100vh;
@@ -1358,7 +1393,10 @@ button {
     color: #111;
 }
 
-/* BOTÃO DE ALTERAR FOTO */
+
+/* ==========================================
+   17. BOTÃO DE ALTERAR FOTO
+========================================== */
 
 .edit-photo-button {
     position: absolute;
@@ -1383,7 +1421,10 @@ button {
     display: none;
 }
 
-/* TELAS GRANDES */
+
+/* ==========================================
+   18. RESPONSIVO - TELAS GRANDES
+========================================== */
 
 @media (min-width: 1500px) {
     .main-area {
@@ -1394,436 +1435,889 @@ button {
     .room-grid {
         gap: 32px 36px;
     }
+}
 
 
-/* =====================================
-   VERIFICAÇÃO DE AGENDAMENTO - GESTÃO
-===================================== */
+/* ==========================================
+   19. VERIFICAÇÃO DE AGENDAMENTO - GESTÃO
+========================================== */
 
 .verify-panel {
-  width: 100%;
-  min-height: 700px;
-  box-sizing: border-box;
-
-  background: #f8f8f8;
-  border: 1px solid #a6bcc9;
-  border-radius: 16px;
-
-  padding: 45px 9% 65px;
-  margin-top: 35px;
-
-  display: flex;
-  flex-direction: column;
+    width: 100%;
+    min-height: 700px;
+    box-sizing: border-box;
+    background: #f8f8f8;
+    border: 1px solid #a6bcc9;
+    border-radius: 16px;
+    padding: 45px 9% 65px;
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Título interno */
 .verify-panel h2 {
-  display: none;
+    display: none;
 }
 
-/* Informações da solicitação */
 .verify-grid {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 12px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
 }
 
-/* Cada informação */
 .verify-grid > div {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
 }
 
-/* Nome dos campos */
 .verify-grid small,
 .verify-description small {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  color: #080808;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #080808;
 }
 
-/* Valores dos campos */
 .verify-grid b {
-  width: 100%;
-  min-height: 40px;
-  box-sizing: border-box;
-
-  display: flex;
-  align-items: center;
-
-  padding: 9px 12px;
-
-  background: #fff4eb;
-  border: 1px solid #a6bcc9;
-  border-radius: 10px;
-
-  font-size: 14px;
-  font-weight: 400;
-  color: #080808;
+    width: 100%;
+    min-height: 40px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 9px 12px;
+    background: #fff4eb;
+    border: 1px solid #a6bcc9;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #080808;
 }
 
-/* Descrição */
 .verify-description {
-  width: 100%;
-  margin-top: 12px;
-
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+    width: 100%;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .verify-description p {
-  width: 100%;
-  min-height: 104px;
-  box-sizing: border-box;
-
-  margin: 0;
-  padding: 12px;
-
-  background: #fff4eb;
-  border: 1px solid #a6bcc9;
-  border-radius: 10px;
-
-  font-size: 14px;
-  color: #080808;
+    width: 100%;
+    min-height: 104px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 12px;
+    background: #fff4eb;
+    border: 1px solid #a6bcc9;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #080808;
 }
 
-/* Botões */
 .verify-actions {
-  width: 88%;
-  margin: 32px auto 0;
-
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+    width: 88%;
+    margin: 32px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .verify-actions button {
-  width: 100%;
-  height: 40px;
-  min-height: 40px;
-
-  border: none;
-  border-radius: 12px;
-
-  font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  color: #080808;
-
-  cursor: pointer;
-  transition: filter 0.2s ease;
+    width: 100%;
+    height: 40px;
+    min-height: 40px;
+    border: none;
+    border-radius: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #080808;
+    cursor: pointer;
+    transition: filter 0.2s ease;
 }
 
 .verify-actions button:hover {
-  filter: brightness(0.96);
+    filter: brightness(0.96);
 }
 
-/* Aceitar */
 .verify-actions .accept {
-  background: #c9ffb8;
+    background: #c9ffb8;
 }
 
-/* Negar */
 .verify-actions .deny {
-  background: #e99b9b;
+    background: #e99b9b;
 }
 
-/* Manutenção */
 .verify-actions .maintenance {
-  background: #fff477;
+    background: #fff477;
 }
 
-/* Voltar */
 .back-link {
-  margin-top: 20px;
-  padding: 10px 0;
-
-  border: none;
-  background: transparent;
-
-  color: #357dbf;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
-  font-weight: 600;
-
-  cursor: pointer;
-}
-
-/* =====================================
-   RESPONSIVIDADE
-===================================== */
-
-@media (max-width: 900px) {
-  .verify-panel {
-    min-height: auto;
-    padding: 30px 5%;
-  }
-
-  .verify-actions {
-    width: 100%;
-    gap: 16px;
-  }
-
-  .verify-actions button {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 600px) {
-  .verify-panel {
     margin-top: 20px;
-    padding: 22px 16px 30px;
-    border-radius: 12px;
-  }
-
-  .verify-grid small,
-  .verify-description small {
-    font-size: 14px;
-  }
-
-  .verify-grid b {
-    font-size: 13px;
-  }
-
-  .verify-description p {
-    font-size: 13px;
-  }
-
-  .verify-actions {
-    margin-top: 24px;
-    gap: 14px;
-  }
-
-  .verify-actions button {
-    height: 42px;
+    padding: 10px 0;
+    border: none;
+    background: transparent;
+    color: #357dbf;
+    font-family: 'Montserrat', sans-serif;
     font-size: 15px;
-  }
+    font-weight: 600;
+    cursor: pointer;
 }
- 
+
+
 /* ==========================================
-   CORREÇÃO DEFINITIVA - VERIFICAÇÃO
+   20. VERIFICAÇÃO - FORMULÁRIO INTERNO
 ========================================== */
 
 .verify-panel .verify-form {
-  width: 80% !important;
-  max-width: 940px !important;
-  margin: 0 auto !important;
-
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 12px !important;
+    width: 80% !important;
+    max-width: 940px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
 }
 
-/* Campos individuais */
 .verify-panel .verify-form .verify-field {
-  width: 100% !important;
-
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 8px !important;
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important;
 }
 
-/* Títulos dos campos */
 .verify-panel .verify-form .verify-field label {
-  display: block !important;
-  margin: 0 !important;
-  padding: 0 !important;
-
-  font-family: 'Montserrat', sans-serif !important;
-  font-size: 16px !important;
-  font-weight: 600 !important;
-  color: #080808 !important;
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    color: #080808 !important;
 }
 
-/* Caixas com as informações */
 .verify-panel .verify-form .verify-field .verify-value {
-  display: flex !important;
-  align-items: center !important;
-
-  width: 100% !important;
-  height: 40px !important;
-  min-height: 40px !important;
-
-  box-sizing: border-box !important;
-  margin: 0 !important;
-  padding: 8px 12px !important;
-
-  background-color: #fff4eb !important;
-  border: 1px solid #a6bcc9 !important;
-  border-radius: 10px !important;
-
-  font-family: 'Montserrat', sans-serif !important;
-  font-size: 14px !important;
-  font-weight: 400 !important;
-  color: #080808 !important;
+    display: flex !important;
+    align-items: center !important;
+    width: 100% !important;
+    height: 40px !important;
+    min-height: 40px !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    padding: 8px 12px !important;
+    background-color: #fff4eb !important;
+    border: 1px solid #a6bcc9 !important;
+    border-radius: 10px !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    color: #080808 !important;
 }
 
-/* Caixa da descrição */
 .verify-panel .verify-form .verify-field .verify-description {
-  display: block !important;
-
-  width: 100% !important;
-  height: 104px !important;
-  min-height: 104px !important;
-
-  box-sizing: border-box !important;
-  margin: 0 !important;
-  padding: 12px !important;
-
-  background-color: #fff4eb !important;
-  border: 1px solid #a6bcc9 !important;
-  border-radius: 10px !important;
-
-  font-family: 'Montserrat', sans-serif !important;
-  font-size: 14px !important;
-  font-weight: 400 !important;
-  color: #080808 !important;
+    display: block !important;
+    width: 100% !important;
+    height: 104px !important;
+    min-height: 104px !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    padding: 12px !important;
+    background-color: #fff4eb !important;
+    border: 1px solid #a6bcc9 !important;
+    border-radius: 10px !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    color: #080808 !important;
 }
 
-/* Data, horário e e-mail */
 .verify-panel .verify-form .verify-extra-info {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  align-items: center !important;
-
-  gap: 8px 20px !important;
-  width: 100% !important;
-  margin-top: 5px !important;
-
-  font-family: 'Montserrat', sans-serif !important;
-  font-size: 12px !important;
-  color: #555 !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    gap: 8px 20px !important;
+    width: 100% !important;
+    margin-top: 5px !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 12px !important;
+    color: #555 !important;
 }
 
 .verify-panel .verify-form .verify-extra-info span {
-  display: inline-block !important;
-  margin: 0 !important;
+    display: inline-block !important;
+    margin: 0 !important;
 }
 
-/* Botões */
 .verify-panel .verify-form .verify-actions {
-  display: flex !important;
-  flex-direction: column !important;
-
-  width: 88% !important;
-  margin: 22px auto 0 !important;
-  gap: 30px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    width: 88% !important;
+    margin: 22px auto 0 !important;
+    gap: 30px !important;
 }
 
 .verify-panel .verify-form .verify-actions button {
-  display: block !important;
-
-  width: 100% !important;
-  height: 40px !important;
-  min-height: 40px !important;
-
-  box-sizing: border-box !important;
-  margin: 0 !important;
-  padding: 0 12px !important;
-
-  border: none !important;
-  border-radius: 12px !important;
-
-  font-family: 'Montserrat', sans-serif !important;
-  font-size: 18px !important;
-  font-weight: 600 !important;
-  color: #080808 !important;
-
-  cursor: pointer;
+    display: block !important;
+    width: 100% !important;
+    height: 40px !important;
+    min-height: 40px !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    padding: 0 12px !important;
+    border: none !important;
+    border-radius: 12px !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    color: #080808 !important;
+    cursor: pointer;
 }
 
 .verify-panel .verify-form .verify-actions .accept {
-  background: #c9ffb8 !important;
+    background: #c9ffb8 !important;
 }
 
 .verify-panel .verify-form .verify-actions .deny {
-  background: #e99b9b !important;
+    background: #e99b9b !important;
 }
 
 .verify-panel .verify-form .verify-actions .maintenance {
-  background: #fff477 !important;
+    background: #fff477 !important;
 }
 
-/* Responsividade */
-@media (max-width: 900px) {
-  .verify-panel .verify-form {
-    width: 88% !important;
-  }
 
-  .verify-panel .verify-form .verify-actions {
-    width: 100% !important;
-    gap: 18px !important;
-  }
-}
+/* ==========================================
+   21. CAMPO DE HORÁRIO DO AGENDAMENTO
+========================================== */
 
-@media (max-width: 600px) {
-  .verify-panel .verify-form {
-    width: 90% !important;
-  }
-
-  .verify-panel .verify-form .verify-field label {
-    font-size: 14px !important;
-  }
-
-  .verify-panel .verify-form .verify-actions {
-    gap: 14px !important;
-  }
-
-  .verify-panel .verify-form .verify-actions button {
-    font-size: 15px !important;
-  }
-
-  .verify-panel .verify-form .verify-extra-info {
-    flex-direction: column !important;
-    align-items: flex-start !important;
-  }
-}
-
-}
-
-/* Campo de horário do agendamento */
 .horario-select {
-  width: 100%;
-  height: 50px;
-  padding: 0 55px 0 22px;
-
-  background-color: #fff4eb;
-  border: 1px solid #3182ce;
-  border-radius: 16px;
-
-  color: #111;
-  font-family: inherit;
-  font-size: 18px;
-
-  outline: none;
-  cursor: pointer;
-
-  appearance: none;
-  -webkit-appearance: none;
-
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26' viewBox='0 0 24 24' fill='none' stroke='%23111' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M12 6v6l4 2'/%3E%3C/svg%3E");
-
-  background-repeat: no-repeat;
-  background-position: right 22px center;
-  background-size: 25px;
+    width: 100%;
+    height: 50px;
+    padding: 0 55px 0 22px;
+    background-color: #fff4eb;
+    border: 1px solid #3182ce;
+    border-radius: 16px;
+    color: #111;
+    font-family: inherit;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26' viewBox='0 0 24 24' fill='none' stroke='%23111' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M12 6v6l4 2'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 22px center;
+    background-size: 25px;
 }
 
 .horario-select:focus {
-  border-color: #3182ce;
-  outline: none;
+    border-color: #3182ce;
+    outline: none;
 }
 
 .horario-select:disabled {
-  cursor: not-allowed;
-  opacity: 1;
+    cursor: not-allowed;
+    opacity: 1;
 }
 
-/* FUNDO DE AGENDAMENTO */
+
+/* ==========================================
+   22. TELA INICIAL - ESTRUTURA
+========================================== */
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 0;
+}
+
+.home-page .page-heading {
+    order: 1;
+}
+
+.home-page .welcome {
+    order: 2;
+}
+
+.home-page .home-title-row {
+    order: 3;
+}
+
+.home-page .filters {
+    order: 4;
+}
+
+.home-page .results-head {
+    order: 5;
+}
+
+.home-page .room-grid {
+    order: 6;
+}
+
+.home-page .empty {
+    order: 7;
+}
+
+
+/* ==========================================
+   23. RESPONSIVO GERAL - CELULAR
+========================================== */
+
+@media (max-width: 600px) {
+
+    body {
+        min-width: 0 !important;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .app-shell {
+        width: 100%;
+        min-height: 100vh;
+        padding-bottom: 76px;
+    }
+
+    .topbar {
+        display: none;
+    }
+
+    .body-shell {
+        display: block;
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    .main-area {
+        width: 100%;
+        min-width: 0;
+        padding: 24px 20px 35px;
+        margin: 0;
+    }
+
+    /* MENU INFERIOR MOBILE */
+
+    .sidebar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 76px;
+        min-height: 76px;
+        flex: none;
+        padding: 6px 4px;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background: #357dbf;
+        z-index: 1000;
+    }
+
+    .menu-label,
+    .manager-area,
+    .side-footer {
+        display: none !important;
+    }
+
+    .sidebar nav {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        gap: 0;
+        margin: 0;
+    }
+
+    .nav-item {
+        flex: 1;
+        min-width: 0;
+        height: 100%;
+        padding: 4px 1px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+        border-radius: 8px;
+        font-size: 10px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .nav-item .icon {
+        width: auto;
+        font-size: 23px;
+    }
+
+    .nav-item.selected {
+        background: transparent;
+        color: #ffd49e;
+    }
+}
+
+
+/* ==========================================
+   24. TELA INICIAL - RESPONSIVO MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+
+    .home-page .welcome {
+        order: 1;
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0 0 2px;
+    }
+
+    .home-page .page-heading {
+        order: 2;
+        margin: 0 0 18px;
+    }
+
+    .home-page .page-heading > small {
+        display: none;
+    }
+
+    .home-page .page-heading h1 {
+        font-size: 21px;
+        line-height: 1.3;
+        margin: 0;
+    }
+
+    .home-page .page-heading p {
+        display: none;
+    }
+
+    .home-page .home-title-row {
+        order: 3;
+        width: 100%;
+        margin: 0 0 12px;
+        gap: 8px;
+    }
+
+    .search-box {
+        width: 100%;
+        min-width: 0;
+        height: 50px;
+        flex: 1;
+        border-radius: 14px;
+        padding: 0 13px;
+        gap: 9px;
+    }
+
+    .search-box .icon {
+        font-size: 25px;
+        flex-shrink: 0;
+    }
+
+    .search-box input {
+        width: 100%;
+        min-width: 0;
+        font-size: 13px;
+    }
+
+    .search-box input::placeholder {
+        font-size: 12px;
+    }
+
+    .home-page .filters {
+        order: 4;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px;
+        margin: 0 0 36px;
+    }
+
+    .filters button {
+        min-height: 36px;
+        padding: 7px 13px;
+        border-radius: 22px;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    .home-page .results-head {
+        order: 5;
+        width: 100%;
+        margin: 0 0 18px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+    }
+
+    .results-head h2 {
+        font-size: 17px;
+        margin: 0;
+    }
+
+    .results-head button {
+        font-size: 11px;
+        font-weight: 600;
+        white-space: nowrap;
+    }
+
+    .home-page .room-grid {
+        order: 6;
+        width: 100%;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 12px;
+    }
+
+    .room-card {
+        width: 100%;
+        min-width: 0;
+        min-height: 100px;
+        padding: 10px 14px;
+        gap: 6px;
+        border-radius: 17px;
+        text-align: left;
+    }
+
+    .room-card > b {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .room-card p {
+        font-size: 12px;
+        line-height: 1.4;
+        overflow-wrap: anywhere;
+    }
+
+    .status {
+        padding: 5px 11px;
+        font-size: 10px;
+    }
+
+    .home-page .empty {
+        order: 7;
+        width: 100%;
+        padding: 20px 5px;
+        font-size: 13px;
+        text-align: center;
+    }
+}
+
+
+/* ==========================================
+   25. TELA INICIAL - CELULARES ESTREITOS
+========================================== */
+
+@media (max-width: 360px) {
+
+    .main-area {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .filters {
+        gap: 6px;
+    }
+
+    .filters button {
+        padding: 7px 10px;
+        font-size: 11px;
+    }
+
+    .results-head h2 {
+        font-size: 15px;
+    }
+
+    .nav-item {
+        font-size: 9px;
+    }
+}
+
+
+/* ==========================================
+   26. VERIFICAÇÃO DE AGENDAMENTO - TABLET
+========================================== */
+
+@media (max-width: 900px) {
+
+    .verify-panel {
+        min-height: auto;
+        padding: 30px 5%;
+    }
+
+    .verify-actions {
+        width: 100%;
+        gap: 16px;
+    }
+
+    .verify-actions button {
+        font-size: 16px;
+    }
+
+    .verify-panel .verify-form {
+        width: 88% !important;
+    }
+
+    .verify-panel .verify-form .verify-actions {
+        width: 100% !important;
+        gap: 18px !important;
+    }
+}
+
+
+/* ==========================================
+   27. VERIFICAÇÃO DE AGENDAMENTO - CELULAR
+========================================== */
+
+@media (max-width: 600px) {
+
+    .verify-panel {
+        margin-top: 20px;
+        padding: 22px 16px 30px;
+        border-radius: 12px;
+    }
+
+    .verify-grid small,
+    .verify-description small {
+        font-size: 14px;
+    }
+
+    .verify-grid b {
+        font-size: 13px;
+    }
+
+    .verify-description p {
+        font-size: 13px;
+    }
+
+    .verify-actions {
+        margin-top: 24px;
+        gap: 14px;
+    }
+
+    .verify-actions button {
+        height: 42px;
+        font-size: 15px;
+    }
+
+    .verify-panel .verify-form {
+        width: 90% !important;
+    }
+
+    .verify-panel .verify-form .verify-field label {
+        font-size: 14px !important;
+    }
+
+    .verify-panel .verify-form .verify-actions {
+        gap: 14px !important;
+    }
+
+    .verify-panel .verify-form .verify-actions button {
+        font-size: 15px !important;
+    }
+
+    .verify-panel .verify-form .verify-extra-info {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+}
+
+
+/* ==========================================
+   28. PERFIL DO PROFESSOR - MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+
+    .profile-page {
+        width: 100%;
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile-page .page-heading {
+        margin: 0 0 22px;
+    }
+
+    .profile-page .page-heading > small {
+        font-size: 11px;
+        margin-bottom: 5px;
+    }
+
+    .profile-page .page-heading h1 {
+        font-size: 22px;
+        margin: 0 0 5px;
+    }
+
+    .profile-page .page-heading p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .profile-page .profile-card {
+        width: 100%;
+        max-width: none;
+        margin: 0 0 22px;
+        padding: 20px 16px 24px;
+        border-radius: 19px;
+        background: #fff4eb;
+    }
+
+    .profile-page .profile-top {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 15px;
+        margin: 0 0 25px;
+    }
+
+    .profile-page .profile-top .profile-placeholder {
+        width: 78px;
+        height: 78px;
+        min-width: 78px;
+        min-height: 78px;
+        flex: 0 0 78px;
+    }
+
+    .profile-page .profile-user-info {
+        min-width: 0;
+        flex: 1;
+    }
+
+    .profile-page .profile-top h2 {
+        font-size: 19px;
+        line-height: 1.3;
+        margin: 0 0 4px;
+        overflow-wrap: anywhere;
+    }
+
+    .profile-page .profile-top p {
+        font-size: 13px;
+        margin: 0;
+    }
+
+    .profile-page .stats {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 8px;
+        margin-bottom: 28px;
+    }
+
+    .profile-page .stats div {
+        width: 100%;
+        height: 85px;
+        min-width: 0;
+        padding: 10px 3px;
+        gap: 10px;
+        border-radius: 12px;
+        background: #f8f8f8;
+    }
+
+    .profile-page .stats b {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .profile-page .stats strong {
+        font-size: 21px;
+    }
+
+    .profile-page .account-details {
+        width: 100%;
+    }
+
+    .profile-page .account-details h3 {
+        font-size: 17px;
+        margin: 0 0 16px;
+    }
+
+    .profile-page .account-details p {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 7px;
+        margin: 0 0 17px;
+        font-size: 12px;
+    }
+
+    .profile-page .account-details p:last-child {
+        margin-bottom: 0;
+    }
+
+    .profile-page .account-details p b {
+        display: flex;
+        align-items: center;
+        gap: 0;
+        width: 100%;
+        min-height: 43px;
+        padding: 10px 13px;
+        border: 1px solid #a6c0d2;
+        border-radius: 11px;
+        background: #fff4eb;
+        font-size: 13px;
+        font-weight: 600;
+        overflow-wrap: anywhere;
+    }
+
+    .profile-page .account-details em {
+        font-size: 11px;
+        padding: 5px 13px;
+    }
+
+    .profile-page .outline-wide {
+        width: 100%;
+        height: 52px;
+        margin: 0;
+        border-radius: 13px;
+        font-size: 15px;
+        background: #357dbf;
+        color: #fff;
+    }
+}
+
+
+/* ==========================================
+   29. PERFIL DO PROFESSOR - CELULARES PEQUENOS
+========================================== */
+
+@media (max-width: 360px) {
+
+    .profile-page .profile-card {
+        padding: 17px 12px 20px;
+    }
+
+    .profile-page .profile-top {
+        gap: 11px;
+    }
+
+    .profile-page .profile-top h2 {
+        font-size: 17px;
+    }
+
+    .profile-page .stats {
+        gap: 5px;
+    }
+
+    .profile-page .stats b {
+        font-size: 9px;
+    }
+
+    .profile-page .account-details p b {
+        font-size: 12px;
+    }
+}
+
+
+/* ==========================================
+   30. FUNDO DE AGENDAMENTO
+========================================== */
 
 .booking-background {
     min-height: calc(100vh - 88px);

@@ -11,7 +11,8 @@ export default function Perfil({
   const email = profileData?.email || 'Alexia@gmail.com';
 
   return (
-    <>
+    <div className="profile-page">
+
       <Heading
         eyebrow="MINHA CONTA"
         title="Meu Perfil"
@@ -30,7 +31,7 @@ export default function Perfil({
             />
           </div>
 
-          <div>
+          <div className="profile-user-info">
             <h2>{nome}</h2>
             <p>Professora</p>
           </div>
@@ -86,6 +87,6 @@ export default function Perfil({
         Editar Perfil
       </button>
 
-    </>
+    </div>
   );
 }
