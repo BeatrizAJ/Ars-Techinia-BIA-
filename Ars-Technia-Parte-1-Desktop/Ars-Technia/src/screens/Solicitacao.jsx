@@ -10,7 +10,7 @@ const solicitacoes = [
     horario: '08:30 às 11:30',
     alunos: '25 alunos',
     descricao: 'Aula prática com a turma.',
-    status: 'Aguardando análise',
+    status: 'Manutenção',
     classe: 'pending',
     icone: '/assets/Manutencao.png'
   },
@@ -35,6 +35,28 @@ const solicitacoes = [
     status: 'Solicitação recusada',
     classe: 'rejected',
     icone: '/assets/Negado.png'
+  },
+  {
+    professor: 'Alexia Vitória',
+    sala: 'Sala 09',
+    data: '04/11/2026',
+    horario: '09:00 às 12:00',
+    alunos: '10 alunos',
+    descricao: 'Aula de reforço.',
+    status: 'Solicitação recusada',
+    classe: 'rejected',
+    icone: '/assets/Negado.png'
+  },
+  {
+    professor: 'Alexia Vitória',
+    sala: 'Arena Cyber',
+    data: '02/11/2026',
+    horario: '14:00 às 17:00',
+    alunos: '30 alunos',
+    descricao: 'Atividade de informática.',
+    status: 'Solicitação aceita',
+    classe: 'approved',
+    icone: '/assets/Verificado.png'
   }
 ];
 

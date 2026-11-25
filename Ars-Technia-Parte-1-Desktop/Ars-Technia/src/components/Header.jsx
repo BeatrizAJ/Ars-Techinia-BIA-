@@ -8,6 +8,7 @@ export default function Header({
   manager = false,
   role,
   profilePhoto = '',
+  profileName = '',
 }) {
   const userRole = role || (manager ? 'GESTÃO' : 'PROFESSOR');
 
@@ -76,7 +77,7 @@ export default function Header({
           className="user-name"
           onClick={() => go('profile')}
         >
-          {manager ? 'Juscelino' : 'Alexia Vitória'}
+          {profileName || (manager ? 'Juscelino' : 'Alexia Vitória')}
         </button>
 
       </div>

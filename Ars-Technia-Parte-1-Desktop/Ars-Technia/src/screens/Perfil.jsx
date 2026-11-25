@@ -2,7 +2,14 @@
 import React from 'react';
 import Heading from '../components/Heading.jsx';
 
-export default function Perfil({ go, profilePhoto = '' }) {
+export default function Perfil({
+  go,
+  profileData,
+  profilePhoto = '',
+}) {
+  const nome = profileData?.nome || 'Alexia Vitória';
+  const email = profileData?.email || 'Alexia@gmail.com';
+
   return (
     <>
       <Heading
@@ -24,7 +31,7 @@ export default function Perfil({ go, profilePhoto = '' }) {
           </div>
 
           <div>
-            <h2>Alexia Vitória</h2>
+            <h2>{nome}</h2>
             <p>Professora</p>
           </div>
 
@@ -55,12 +62,12 @@ export default function Perfil({ go, profilePhoto = '' }) {
 
           <p>
             <span>Nome</span>
-            <b>Alexia Vitória</b>
+            <b>{nome}</b>
           </p>
 
           <p>
             <span>E-mail</span>
-            <b>Alexia@gmail.com</b>
+            <b>{email}</b>
           </p>
 
           <p>

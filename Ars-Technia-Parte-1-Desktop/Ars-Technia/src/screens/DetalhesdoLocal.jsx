@@ -1,9 +1,129 @@
+
 import React from 'react';
 import Heading from '../components/Heading.jsx';
-export default function DetalhesdoLocal({ go }) {
-  return <><Heading title="Detalhes do Local" desc="Reservas / Detalhes do Local" />
-    <div className="details-layout"><section className="place-card"><div className="place-title"><h2>Sala 14</h2><span className="status status-reservada">Reservada</span></div>
-      <h3>Detalhes do local</h3><div className="place-preview"><b>SALA MAC</b><div className="preview-content"><div className="photo-placeholder">＋</div><div><b>Segundo andar</b><b>Professora Jéssica</b><b>Máximo 30 alunos</b><b>08:30 até às 11:30</b></div></div></div>
-    </section><aside className="place-side"><b>Detalhes do local</b><div className="communication"><span>Comunicação</span><small>Atualizado hoje</small><p>📢 Professor confirmou a reserva da sala para hoje.</p></div><button className="blue-wide" onClick={() => go('agendamento')}>Enviar Solicitação</button></aside></div>
-  </>;
+
+export default function DetalhesdoLocal({
+  go,
+  sala,
+  onRequest
+}) {
+  if (!sala) {
+    return (
+      <>
+        <Heading
+          title="Detalhes do Local"
+          desc="Reservas / Detalhes do Local"
+        />
+
+        <div className="empty">
+          Nenhuma sala foi selecionada.
+        </div>
+
+        <button
+          className="blue-wide"
+          onClick={() => go('home')}
+        >
+          Voltar para Minhas salas
+        </button>
+      </>
+    );
+  }
+
+  const nome = sala.nome || 'Nome não informado';
+  const status = sala.status || 'Status não informado';
+  const local = sala.local || sala.setor || 'Local não informado';
+  const quantidade = sala.quantidade || sala.capacidade;
+  const descricao = sala.descricao || '';
+  const imagem = sala.imagem;
+
+  return (
+    <>
+      <Heading
+        title="Detalhes do Local"
+        desc="Reservas / Detalhes do Local"
+      />
+
+      <div className="details-layout">
+
+        <section className="place-card">
+          <div className="place-title">
+            <h2>{nome}</h2>
+
+            <span className={`status ${sala.classe || ''}`}>
+              {status}
+            </span>
+          </div>
+
+          <h3>Detalhes do local</h3>
+
+          <div className="place-preview">
+            <b>{nome.toUpperCase()}</b>
+
+            <div className="preview-content">
+              <div className="photo-placeholder">
+                {imagem ? (
+                  <img
+                    src={imagem}
+                    alt={`Imagem de ${nome}`}
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover',
+                      borderRadius: 'inherit'
+                    }}
+                  />
+                ) : (
+                  '＋'
+                )}
+              </div>
+
+              <div>
+                <b>{local}</b>
+
+                {quantidade && (
+                  <b>Máximo {quantidade} alunos</b>
+                )}
+
+                {descricao && (
+                  <b>{descricao}</b>
+                )}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <aside className="place-side">
+          <b>Detalhes do local</b>
+
+          <div className="communication">
+            <span>Comunicação</span>
+            <small>Status da sala</small>
+
+            <p>
+              {nome} está atualmente com o status: {status}.
+            </p>
+          </div>
+
+          {typeof onRequest === 'function' ? (
+            <button
+              type="button"
+              className="blue-wide"
+              onClick={onRequest}
+            >
+              Enviar solicitação
+            </button>
+          ) : (
+            <button
+              type="button"
+              className="blue-wide"
+              onClick={() => go('homeManager')}
+            >
+              Voltar
+            </button>
+          )}
+        </aside>
+
+      </div>
+    </>
+  );
 }

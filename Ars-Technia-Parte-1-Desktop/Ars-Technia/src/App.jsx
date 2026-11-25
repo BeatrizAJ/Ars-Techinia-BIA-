@@ -1,5 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
+
 import Shell from './components/Shell.jsx';
 
 import Agendamento from './screens/Agendamento.jsx';
@@ -73,6 +74,54 @@ const SALAS_INICIAIS = [
   },
 ];
 
+const PERFIS_INICIAIS = {
+  professor: {
+    nome: 'Alexia Vitória',
+    email: 'Alexia@gmail.com',
+    foto: '',
+  },
+  gestao: {
+    nome: 'Juscelino',
+    email: 'jussaADM@gmail.com',
+    foto: '',
+  },
+};
+
+function getSavedProfiles() {
+  try {
+    const saved = localStorage.getItem('ars-user-profiles');
+
+    if (saved) {
+      const parsed = JSON.parse(saved);
+
+      return {
+        professor: {
+          ...PERFIS_INICIAIS.professor,
+          ...parsed.professor,
+        },
+        gestao: {
+          ...PERFIS_INICIAIS.gestao,
+          ...parsed.gestao,
+        },
+      };
+    }
+  } catch (error) {
+    console.error('Erro ao carregar os perfis:', error);
+  }
+
+  return PERFIS_INICIAIS;
+}
+
+function getSavedRoom() {
+  try {
+    const saved = sessionStorage.getItem('ars-selected-room');
+    return saved ? JSON.parse(saved) : null;
+  } catch (error) {
+    console.error('Erro ao recuperar a sala selecionada:', error);
+    return null;
+  }
+}
+
 function getRouteInfo() {
   const hash = window.location.hash.replace(/^#\/?/, '');
   const [route, query = ''] = hash.split('?');
@@ -96,13 +145,6 @@ function getInitialRole() {
   return sessionStorage.getItem('ars-role') === 'gestao';
 }
 
-function getSavedPhotos() {
-  return {
-    professor: localStorage.getItem('ars-profile-photo-professor') || '',
-    gestao: localStorage.getItem('ars-profile-photo-gestao') || '',
-  };
-}
-
 export default function App() {
   const [page, setPage] = useState(getCurrentPage);
   const [manager, setManager] = useState(getInitialRole);
@@ -111,17 +153,29 @@ export default function App() {
   const [selectedRequest, setSelectedRequest] = useState(0);
   const [selectedBooking, setSelectedBooking] = useState(null);
 
-  const [profilePhotos, setProfilePhotos] = useState(getSavedPhotos);
+  // Guarda diretamente os dados da sala selecionada.
+  const [selectedRoom, setSelectedRoom] = useState(getSavedRoom);
+
+  const [profiles, setProfiles] = useState(getSavedProfiles);
   const [salas, setSalas] = useState(SALAS_INICIAIS);
 
   const [editingRoomIndex, setEditingRoomIndex] = useState(
     () => getRouteInfo().editingIndex
   );
 
-  const profilePhoto = manager
-    ? profilePhotos.gestao
-    : profilePhotos.professor;
+  const accountType = manager ? 'gestao' : 'professor';
+  const profileData = profiles[accountType];
+  const profilePhoto = profileData.foto;
 
+  // Salva os perfis no navegador.
+  useEffect(() => {
+    localStorage.setItem(
+      'ars-user-profiles',
+      JSON.stringify(profiles)
+    );
+  }, [profiles]);
+
+  // Navegação.
   const go = (nextPage) => {
     const [route, query = ''] = nextPage.split('?');
     const params = new URLSearchParams(query);
@@ -138,6 +192,7 @@ export default function App() {
     window.location.hash = `/${nextPage}`;
   };
 
+  // Altera o tipo de usuário.
   const changeRole = (isManager) => {
     setManager(isManager);
 
@@ -147,6 +202,22 @@ export default function App() {
     );
   };
 
+  // Atualiza nome e e-mail do perfil.
+  const saveProfile = (dados) => {
+    setProfiles((previous) => ({
+      ...previous,
+      [accountType]: {
+        ...previous[accountType],
+        nome: dados.nome,
+        email: dados.email,
+      },
+    }));
+
+    window.alert('Dados atualizados com sucesso!');
+    go('profile');
+  };
+
+  // Atualiza a foto do perfil.
   const saveProfilePhoto = (file) => {
     if (!file) return;
 
@@ -158,21 +229,19 @@ export default function App() {
     const reader = new FileReader();
 
     reader.onload = () => {
-      const photo = reader.result;
-      const accountType = manager ? 'gestao' : 'professor';
-      const storageKey = `ars-profile-photo-${accountType}`;
-
-      localStorage.setItem(storageKey, photo);
-
-      setProfilePhotos((previous) => ({
+      setProfiles((previous) => ({
         ...previous,
-        [accountType]: photo,
+        [accountType]: {
+          ...previous[accountType],
+          foto: reader.result,
+        },
       }));
     };
 
     reader.readAsDataURL(file);
   };
 
+  // Sincroniza a rota.
   useEffect(() => {
     const syncPage = () => {
       const routeInfo = getRouteInfo();
@@ -188,23 +257,26 @@ export default function App() {
     };
   }, []);
 
+  // Finaliza uma ação.
   const finish = (message) => {
     window.alert(message);
+
     setSelectedBooking(null);
     go(manager ? 'homeManager' : 'home');
   };
 
+  // Cadastra ou edita uma sala.
   const salvarSala = (dadosSala) => {
     if (editingRoomIndex !== null) {
       setSalas((anteriores) =>
         anteriores.map((sala, index) =>
           index === editingRoomIndex
             ? {
-                ...sala,
-                ...dadosSala,
-                nome: dadosSala.nome || dadosSala.local || sala.nome,
-                local: dadosSala.local,
-              }
+              ...sala,
+              ...dadosSala,
+              nome: dadosSala.nome || dadosSala.local || sala.nome,
+              local: dadosSala.local,
+            }
             : sala
         )
       );
@@ -226,24 +298,45 @@ export default function App() {
     go('homeManager');
   };
 
-  // Abre os detalhes do agendamento selecionado pelo professor.
+  // Abre os detalhes guardando o objeto completo da sala.
+  const openRoomDetails = (sala) => {
+    if (!sala || typeof sala !== 'object') {
+      window.alert('Não foi possível encontrar os dados desta sala.');
+      return;
+    }
+
+    setSelectedRoom(sala);
+
+    sessionStorage.setItem(
+      'ars-selected-room',
+      JSON.stringify(sala)
+    );
+
+    go('detalhes');
+  };
+
+  // Abre um agendamento.
   const openProfessorBooking = (booking) => {
     setSelectedBooking(booking);
     go('agendamento');
   };
 
-  // Abre a verificação de solicitações da Gestão.
+  // Abre a verificação de uma solicitação.
   const openManagerVerification = (index = 0) => {
     setSelectedRequest(index);
     go('verificacao');
   };
 
+  // Decide uma solicitação.
   const decide = (result) => {
     setDecision(result);
+
     window.alert(`Solicitação ${result.toLowerCase()}!`);
+
     go('solicitacaoGestao');
   };
 
+  // Login.
   if (page === 'login') {
     return (
       <Login
@@ -253,26 +346,33 @@ export default function App() {
     );
   }
 
+  // Cadastro de conta.
   if (page === 'cadastroConta' || page === 'signup') {
     return <CadastroDeConta go={go} />;
   }
 
+  // Agendamento.
   if (page === 'agendamento' || page === 'booking') {
     return (
       <div className="booking-background">
         <Agendamento
           initialData={selectedBooking}
+          profileData={profileData}
           onBack={() => {
-            if (selectedBooking) {
+            if (selectedBooking?.tipo === 'novo') {
+              setSelectedBooking(null);
+              go('detalhes');
+            } else if (selectedBooking) {
               setSelectedBooking(null);
               go('solicitacao');
             } else {
               go(manager ? 'homeManager' : 'home');
             }
           }}
-          onFinish={() =>
-            finish('Solicitação cadastrada com sucesso!')
-          }
+          onFinish={(dados) => {
+            console.log('Dados da solicitação:', dados);
+            finish('Solicitação cadastrada com sucesso!');
+          }}
         />
       </div>
     );
@@ -281,20 +381,50 @@ export default function App() {
   let content;
 
   switch (page) {
+    // Tela inicial.
     case 'home':
     case 'homeManager':
       content = manager ? (
-        <TelaInicialGESTAO go={go} salas={salas} />
+        <TelaInicialGESTAO
+          go={go}
+          salas={salas}
+          onSelectRoom={openRoomDetails}
+          profileData={profileData}
+        />
       ) : (
-        <TelaInicial go={go} />
+        <TelaInicial
+          go={go}
+          profileData={profileData}
+          salas={salas}
+          onSelectRoom={openRoomDetails}
+        />
       );
       break;
 
+    // Detalhes da sala.
     case 'detalhes':
     case 'details':
-      content = <DetalhesdoLocal go={go} />;
-      break;
+      content = (
+        <DetalhesdoLocal
+          go={go}
+          sala={selectedRoom}
+          onRequest={
+            !manager
+              ? () => {
+                setSelectedBooking({
+                  tipo: 'novo',
+                  sala: selectedRoom,
+                });
 
+                go('agendamento');
+              }
+              : undefined
+          }
+        />
+      );
+      break; k;
+
+    // Cadastro de salas.
     case 'cadastroSalas':
     case 'rooms': {
       const salaParaEditar =
@@ -312,33 +442,40 @@ export default function App() {
       break;
     }
 
+    // Edição de perfil.
     case 'editarPerfil':
     case 'edit':
       content = (
         <EditarPerfil
           go={go}
           manager={manager}
+          profileData={profileData}
           profilePhoto={profilePhoto}
           onPhotoChange={saveProfilePhoto}
+          onSave={saveProfile}
         />
       );
       break;
 
+    // Perfil.
     case 'profile':
     case 'managerProfile':
       content = manager ? (
         <PerfilGestao
           go={go}
+          profileData={profileData}
           profilePhoto={profilePhoto}
         />
       ) : (
         <Perfil
           go={go}
+          profileData={profileData}
           profilePhoto={profilePhoto}
         />
       );
       break;
 
+    // Solicitações do professor.
     case 'solicitacao':
     case 'notifications':
       content = (
@@ -346,20 +483,24 @@ export default function App() {
           go={go}
           decision={decision}
           onDetails={openProfessorBooking}
+          profileData={profileData}
         />
       );
       break;
 
+    // Solicitações da gestão.
     case 'solicitacaoGestao':
     case 'managerNotifications':
       content = (
         <SolicitacaoGESTAO
           go={go}
           onDetails={openManagerVerification}
+          profileData={profileData}
         />
       );
       break;
 
+    // Verificação de agendamento.
     case 'verificacao':
       content = (
         <VerificacaoAgendamento
@@ -372,9 +513,17 @@ export default function App() {
 
     default:
       content = manager ? (
-        <TelaInicialGESTAO go={go} salas={salas} />
+        <TelaInicialGESTAO
+          go={go}
+          salas={salas}
+          onSelectRoom={openRoomDetails}
+          profileData={profileData}
+        />
       ) : (
-        <TelaInicial go={go} />
+        <TelaInicial
+          go={go}
+          profileData={profileData}
+        />
       );
   }
 
@@ -384,6 +533,7 @@ export default function App() {
       page={page}
       manager={manager}
       profilePhoto={profilePhoto}
+      profileName={profileData.nome}
     >
       {content}
     </Shell>

@@ -20,6 +20,7 @@ export default function CadastroDeSalas({
       setLocal(salaParaEditar.local || '');
       setDescricao(salaParaEditar.descricao || '');
       setImagem(salaParaEditar.imagem || null);
+      setArquivoImagem(null);
     } else {
       setQuantidade('');
       setLocal('');
@@ -44,7 +45,8 @@ export default function CadastroDeSalas({
     e.preventDefault();
 
     const dadosSala = {
-      ...salaParaEditar,
+      ...(salaParaEditar || {}),
+      nome: salaParaEditar?.nome || local,
       quantidade,
       local,
       descricao,
@@ -59,11 +61,11 @@ export default function CadastroDeSalas({
     <>
       <Heading
         eyebrow="GESTÃO"
-        title={modoEdicao ? "Editar Sala" : "Cadastro de Salas"}
+        title={modoEdicao ? 'Editar Sala' : 'Cadastro de Salas'}
         desc={
           modoEdicao
-            ? "Altere as informações da sala selecionada."
-            : "Cadastre o local e as informações necessárias para as reservas."
+            ? 'Altere as informações da sala selecionada.'
+            : 'Cadastre o local e as informações necessárias para as reservas.'
         }
       />
 

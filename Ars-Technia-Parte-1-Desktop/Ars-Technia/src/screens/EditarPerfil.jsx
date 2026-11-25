@@ -1,15 +1,25 @@
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Heading from '../components/Heading.jsx';
 
 export default function EditarPerfil({
   go,
   manager = false,
+  profileData,
   profilePhoto = '',
   onPhotoChange,
+  onSave,
 }) {
-  const name = manager ? 'Juscelino' : 'Alexia Vitória';
-  const email = manager ? 'jussaADM@gmail.com' : 'Alexia@gmail.com';
+  const name = profileData?.nome || (manager ? 'Juscelino' : 'Alexia Vitória');
+  const email = profileData?.email || (manager ? 'jussaADM@gmail.com' : 'Alexia@gmail.com');
+
+  const [nome, setNome] = useState(name);
+  const [emailAtual, setEmailAtual] = useState(email);
+
+  useEffect(() => {
+    setNome(name);
+    setEmailAtual(email);
+  }, [name, email]);
 
   const handleImageChange = (event) => {
     const file = event.target.files?.[0];
@@ -19,6 +29,23 @@ export default function EditarPerfil({
     }
 
     event.target.value = '';
+  };
+
+  const handleSave = () => {
+    if (!nome.trim() || !emailAtual.trim()) {
+      window.alert('Preencha o nome e o e-mail.');
+      return;
+    }
+
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailAtual)) {
+      window.alert('Digite um e-mail válido.');
+      return;
+    }
+
+    onSave({
+      nome: nome.trim(),
+      email: emailAtual.trim(),
+    });
   };
 
   return (
@@ -61,8 +88,8 @@ export default function EditarPerfil({
         </div>
 
         <div>
-          <b>{name}</b>
-          <p>{email}</p>
+          <b>{nome}</b>
+          <p>{emailAtual}</p>
         </div>
 
       </div>
@@ -72,17 +99,27 @@ export default function EditarPerfil({
 
         <label>
           Nome
-          <input defaultValue={name} />
+          <input
+            type="text"
+            value={nome}
+            onChange={(e) => setNome(e.target.value)}
+            placeholder="Digite seu nome"
+          />
         </label>
 
         <label>
           E-mail
-          <input defaultValue={email} />
+          <input
+            type="email"
+            value={emailAtual}
+            onChange={(e) => setEmailAtual(e.target.value)}
+            placeholder="Digite seu e-mail"
+          />
         </label>
 
         <button
           className="save-button"
-          onClick={() => window.alert('Dados atualizados!')}
+          onClick={handleSave}
         >
           Salvar
         </button>
