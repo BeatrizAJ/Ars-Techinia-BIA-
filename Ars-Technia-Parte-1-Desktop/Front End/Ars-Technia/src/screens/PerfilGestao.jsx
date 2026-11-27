@@ -10,10 +10,14 @@ export default function PerfilGestao({
   const email = profileData?.email || 'jussaADM@gmail.com';
 
   return (
-    <>
+    <div className="profile-page">
+
       <div className="page-heading">
+        <small>GESTÃO</small>
         <h1>Meu Perfil</h1>
-        <p>Confira as informações da sua conta de gestão.</p>
+        <p>
+          Confira as informações da sua conta de gestão.
+        </p>
       </div>
 
       <section className="profile-card">
@@ -28,7 +32,7 @@ export default function PerfilGestao({
             />
           </div>
 
-          <div>
+          <div className="profile-user-info">
             <h2>{nome}</h2>
             <p>Administrador</p>
           </div>
@@ -70,7 +74,9 @@ export default function PerfilGestao({
 
           <p>
             <span>Tipo de conta</span>
-            <b><em>Gestão</em></b>
+            <b>
+              <em>Gestão</em>
+            </b>
           </p>
 
         </div>
@@ -83,6 +89,7 @@ export default function PerfilGestao({
       >
         Editar Perfil
       </button>
-    </>
+
+    </div>
   );
 }

@@ -1,6 +1,3 @@
-/* ==========================================
-   1. FONTES E CONFIGURAÇÕES GERAIS
-========================================== */
 
 @font-face {
     font-family: Montserrat;
@@ -55,11 +52,6 @@ button {
     min-height: 100vh;
     background: linear-gradient(115deg, #a6bcc9 0%, #e7e5e1 43%, #fff4eb 78%);
 }
-
-
-/* ==========================================
-   2. HEADER
-========================================== */
 
 .topbar {
     width: 100%;
@@ -159,11 +151,6 @@ button {
     font-size: 14px;
     font-weight: 600;
 }
-
-
-/* ==========================================
-   3. ESTRUTURA PRINCIPAL E MENU
-========================================== */
 
 .body-shell {
     display: flex;
@@ -290,11 +277,6 @@ button {
     padding: 40px 40px 50px;
 }
 
-
-/* ==========================================
-   4. TÍTULOS E CABEÇALHOS DE PÁGINA
-========================================== */
-
 .page-heading {
     margin-bottom: 32px;
 }
@@ -337,11 +319,6 @@ button {
     white-space: nowrap;
 }
 
-
-/* ==========================================
-   5. PESQUISA
-========================================== */
-
 .search-box {
     height: 50px;
     border: 1px solid #a6c0d2;
@@ -378,11 +355,6 @@ button {
     margin-left: 0;
 }
 
-
-/* ==========================================
-   6. FILTROS
-========================================== */
-
 .filters {
     display: flex;
     gap: 8px;
@@ -402,11 +374,6 @@ button {
     border-color: #357dbf;
     color: #fff;
 }
-
-
-/* ==========================================
-   7. CARDS DE SALAS
-========================================== */
 
 .results-head {
     display: flex;
@@ -498,11 +465,6 @@ button {
 .empty {
     padding: 20px;
 }
-
-
-/* ==========================================
-   8. NOTIFICAÇÕES
-========================================== */
 
 .notification-layout {
     display: grid;
@@ -663,11 +625,6 @@ button {
     background: #d83d3d;
 }
 
-
-/* ==========================================
-   9. PERFIL DO PROFESSOR
-========================================== */
-
 .profile-card {
     max-width: 790px;
     margin: 22px auto 55px;
@@ -786,11 +743,6 @@ button {
     font-weight: 700;
     background: #fff4eb;
 }
-
-
-/* ==========================================
-   10. EDIÇÃO DE PERFIL
-========================================== */
 
 .edit-user {
     min-height: 138px;
@@ -966,11 +918,6 @@ button {
     font-size: 17px;
 }
 
-
-/* ==========================================
-   11. SESSÃO
-========================================== */
-
 .session-panel {
     max-width: 750px;
     margin: 42px auto 0;
@@ -1000,11 +947,6 @@ button {
     padding: 16px 24px;
     font-weight: 700;
 }
-
-
-/* ==========================================
-   12. DETALHES DO LOCAL
-========================================== */
 
 .details-layout {
     display: grid;
@@ -1110,11 +1052,6 @@ button {
     font-size: 16px;
 }
 
-
-/* ==========================================
-   13. FORMULÁRIOS
-========================================== */
-
 .verify-panel,
 .rooms-form,
 .standalone-form {
@@ -1191,11 +1128,6 @@ button {
     margin: 14px 0 26px;
 }
 
-
-/* ==========================================
-   14. CADASTRO DE SALAS - IMAGEM
-========================================== */
-
 .rooms-form input[type="file"] {
     display: none !important;
 }
@@ -1242,11 +1174,6 @@ button {
     gap: 20px;
 }
 
-
-/* ==========================================
-   15. TELAS INDEPENDENTES
-========================================== */
-
 .standalone {
     max-width: 1136px;
     margin: 0 auto;
@@ -1264,11 +1191,6 @@ button {
 .standalone-form .blue-wide {
     margin-top: 0;
 }
-
-
-/* ==========================================
-   16. LOGIN E CADASTRO
-========================================== */
 
 .auth-page {
     min-height: 100vh;
@@ -1393,11 +1315,6 @@ button {
     color: #111;
 }
 
-
-/* ==========================================
-   17. BOTÃO DE ALTERAR FOTO
-========================================== */
-
 .edit-photo-button {
     position: absolute;
     right: -7px;
@@ -1421,11 +1338,6 @@ button {
     display: none;
 }
 
-
-/* ==========================================
-   18. RESPONSIVO - TELAS GRANDES
-========================================== */
-
 @media (min-width: 1500px) {
     .main-area {
         padding-left: 40px;
@@ -1436,11 +1348,6 @@ button {
         gap: 32px 36px;
     }
 }
-
-
-/* ==========================================
-   19. VERIFICAÇÃO DE AGENDAMENTO - GESTÃO
-========================================== */
 
 .verify-panel {
     width: 100%;
@@ -1567,11 +1474,6 @@ button {
     cursor: pointer;
 }
 
-
-/* ==========================================
-   20. VERIFICAÇÃO - FORMULÁRIO INTERNO
-========================================== */
-
 .verify-panel .verify-form {
     width: 80% !important;
     max-width: 940px !important;
@@ -1687,11 +1589,6 @@ button {
     background: #fff477 !important;
 }
 
-
-/* ==========================================
-   21. CAMPO DE HORÁRIO DO AGENDAMENTO
-========================================== */
-
 .horario-select {
     width: 100%;
     height: 50px;
@@ -1721,11 +1618,6 @@ button {
     cursor: not-allowed;
     opacity: 1;
 }
-
-
-/* ==========================================
-   22. TELA INICIAL - ESTRUTURA
-========================================== */
 
 .home-page {
     display: flex;
@@ -1762,11 +1654,6 @@ button {
     order: 7;
 }
 
-
-/* ==========================================
-   23. RESPONSIVO GERAL - CELULAR
-========================================== */
-
 @media (max-width: 600px) {
 
     body {
@@ -1797,8 +1684,6 @@ button {
         padding: 24px 20px 35px;
         margin: 0;
     }
-
-    /* MENU INFERIOR MOBILE */
 
     .sidebar {
         position: fixed;
@@ -1861,11 +1746,6 @@ button {
         color: #ffd49e;
     }
 }
-
-
-/* ==========================================
-   24. TELA INICIAL - RESPONSIVO MOBILE
-========================================== */
 
 @media (max-width: 600px) {
 
@@ -2009,11 +1889,6 @@ button {
     }
 }
 
-
-/* ==========================================
-   25. TELA INICIAL - CELULARES ESTREITOS
-========================================== */
-
 @media (max-width: 360px) {
 
     .main-area {
@@ -2038,11 +1913,6 @@ button {
         font-size: 9px;
     }
 }
-
-
-/* ==========================================
-   26. VERIFICAÇÃO DE AGENDAMENTO - TABLET
-========================================== */
 
 @media (max-width: 900px) {
 
@@ -2069,11 +1939,6 @@ button {
         gap: 18px !important;
     }
 }
-
-
-/* ==========================================
-   27. VERIFICAÇÃO DE AGENDAMENTO - CELULAR
-========================================== */
 
 @media (max-width: 600px) {
 
@@ -2128,10 +1993,734 @@ button {
     }
 }
 
+@media (max-width: 600px) {
 
-/* ==========================================
-   28. PERFIL DO PROFESSOR - MOBILE
-========================================== */
+    .home-page-gestao {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .home-page-gestao .welcome {
+        order: 1;
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0 0 2px;
+    }
+
+    .home-page-gestao .page-heading {
+        order: 2;
+        margin: 0 0 18px;
+    }
+
+    .home-page-gestao .page-heading > small {
+        display: none;
+    }
+
+    .home-page-gestao .page-heading h1 {
+        font-size: 21px;
+        line-height: 1.3;
+        margin: 0;
+    }
+
+    .home-page-gestao .page-heading p {
+        display: none;
+    }
+
+    .home-page-gestao .home-title-row {
+        order: 3;
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 50px;
+        margin: 0 0 12px;
+        gap: 8px;
+    }
+
+    .home-page-gestao .search-box {
+        width: 100%;
+        min-width: 0;
+        height: 50px;
+        flex: 1;
+        border-radius: 14px;
+        padding: 0 13px;
+        gap: 9px;
+    }
+
+    .home-page-gestao .search-box .icon {
+        font-size: 25px;
+        flex-shrink: 0;
+    }
+
+    .home-page-gestao .search-box input {
+        width: 100%;
+        min-width: 0;
+        font-size: 13px;
+    }
+
+    .home-page-gestao .search-box input::placeholder {
+        font-size: 12px;
+    }
+
+    .home-page-gestao .add-button {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        z-index: 2;
+
+        width: 44px;
+        height: 44px;
+        min-width: 44px;
+
+        margin: 0;
+        padding: 0;
+
+        border-radius: 11px;
+        background: #4149d8;
+        color: #fff;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 32px;
+        line-height: 1;
+    }
+
+    .home-page-gestao .filters {
+        order: 4;
+        position: relative;
+
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        gap: 8px;
+        padding-right: 62px;
+
+        margin: 0 0 64px;
+    }
+
+    .home-page-gestao .filters button {
+        min-height: 36px;
+        padding: 7px 13px;
+
+        border-radius: 22px;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    .home-page-gestao .results-head {
+        order: 5;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 8px;
+        margin: 0 0 18px;
+    }
+
+    .home-page-gestao .results-head h2 {
+        font-size: 17px;
+        margin: 0;
+    }
+
+    .home-page-gestao .results-head button {
+        font-size: 11px;
+        font-weight: 600;
+        white-space: nowrap;
+    }
+
+    .home-page-gestao .room-grid {
+        order: 6;
+
+        width: 100%;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+
+        gap: 12px;
+    }
+
+    .home-page-gestao .room-card {
+        position: relative;
+
+        width: 100%;
+        min-width: 0;
+        min-height: 100px;
+
+        padding: 10px 70px 10px 15px;
+        gap: 6px;
+
+        border-radius: 17px;
+        text-align: left;
+    }
+
+    .home-page-gestao .room-card > b {
+        font-size: 13px;
+        line-height: 1.4;
+        overflow-wrap: anywhere;
+    }
+
+    .home-page-gestao .room-card p {
+        font-size: 12px;
+        line-height: 1.4;
+        margin: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .home-page-gestao .status {
+        align-self: flex-start;
+        padding: 5px 11px;
+        font-size: 10px;
+    }
+
+    .home-page-gestao .edit-room {
+        position: absolute;
+        top: 11px;
+        right: 12px;
+
+        width: 44px;
+        height: 44px;
+        min-width: 44px;
+
+        padding: 0;
+        margin: 0;
+
+        border-radius: 11px;
+        background: #357dbf;
+        color: #fff;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 25px;
+        line-height: 1;
+    }
+
+    .home-page-gestao .empty {
+        order: 7;
+
+        width: 100%;
+        padding: 20px 5px;
+
+        font-size: 13px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .solicitacao-gestao {
+        width: 100%;
+        min-width: 0;
+        padding-bottom: 24px;
+    }
+
+    .solicitacao-gestao .solicitacao-heading-desktop {
+        display: none;
+    }
+
+    .solicitacao-gestao .solicitacao-heading-mobile {
+        display: block;
+        margin: 0 0 34px;
+    }
+
+    .solicitacao-gestao .solicitacao-heading-mobile .page-heading {
+        margin: 0;
+    }
+
+    .solicitacao-gestao .solicitacao-heading-mobile .page-heading h1 {
+        font-size: 21px;
+        line-height: 1.3;
+        margin: 0;
+    }
+
+    .solicitacao-gestao .solicitacao-heading-mobile .page-heading p {
+        display: none;
+    }
+
+    .solicitacao-gestao .solicitacao-heading-mobile .page-heading small {
+        display: block;
+        color: #357dbf;
+        font-size: 13px;
+        font-weight: 700;
+        margin-bottom: 2px;
+    }
+
+    .solicitacao-gestao .solicitacao-gestao-results {
+        display: none;
+    }
+
+    .solicitacao-gestao .notification-layout {
+        display: block;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .solicitacao-gestao .solicitacao-gestao-lista {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 28px;
+    }
+
+    .solicitacao-gestao .notification-card {
+        position: relative;
+
+        width: 100%;
+        min-width: 0;
+        min-height: 145px;
+
+        display: block;
+
+        padding: 19px 20px;
+        margin: 0;
+
+        background: #fff4eb;
+        border: 1px solid #a6c0d2;
+        border-radius: 17px;
+
+        box-shadow: 0 8px 18px rgba(40, 93, 140, 0.08);
+    }
+
+    .solicitacao-gestao .notification-card .request-info {
+        display: none;
+    }
+
+    .solicitacao-gestao .request-mobile-info {
+        display: block;
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .solicitacao-gestao .request-mobile-top {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3px;
+    }
+
+    .solicitacao-gestao .request-mobile-top small {
+        display: block;
+        font-size: 11px;
+        line-height: 1.4;
+        font-weight: 600;
+        color: #171717;
+    }
+
+    .solicitacao-gestao .request-mobile-top b {
+        display: block;
+        max-width: 100%;
+        font-size: 15px;
+        line-height: 1.3;
+        font-weight: 700;
+        overflow-wrap: anywhere;
+    }
+
+    .solicitacao-gestao .request-mobile-info p {
+        margin: 14px 0 0;
+        font-size: 14px;
+        line-height: 1.4;
+        overflow-wrap: anywhere;
+    }
+
+    .solicitacao-gestao .request-mobile-info strong {
+        font-weight: 700;
+    }
+
+    .solicitacao-gestao .notification-card .primary-button {
+        position: absolute;
+        top: 9px;
+        right: 6px;
+
+        min-width: 123px;
+        height: 41px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 0 10px;
+        margin: 0;
+
+        border-radius: 12px;
+        background: #4149d8;
+        color: #fff;
+
+        font-size: 15px;
+        font-weight: 700;
+        white-space: nowrap;
+
+        box-shadow: 0 6px 12px rgba(65, 73, 216, 0.16);
+    }
+
+    .solicitacao-gestao .info-column {
+        display: none;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .solicitacao-gestao {
+        width: 100%;
+        min-width: 0;
+        padding-bottom: 24px;
+    }
+
+    .solicitacao-gestao .solicitacao-heading-desktop {
+        display: none;
+    }
+
+    .solicitacao-gestao .solicitacao-heading-mobile {
+        display: block;
+        margin: 0 0 32px;
+    }
+
+    .solicitacao-gestao .solicitacao-heading-mobile .page-heading {
+        margin: 0;
+    }
+
+    .solicitacao-gestao .solicitacao-heading-mobile .page-heading > small {
+        display: block;
+        color: #357dbf;
+        font-size: 13px;
+        font-weight: 700;
+        margin: 0 0 2px;
+    }
+
+    .solicitacao-gestao .solicitacao-heading-mobile .page-heading h1 {
+        font-size: 22px;
+        line-height: 1.2;
+        margin: 0;
+        padding-left: 6px;
+    }
+
+    .solicitacao-gestao .solicitacao-heading-mobile .page-heading p {
+        display: none;
+    }
+
+    .solicitacao-gestao .solicitacao-gestao-results,
+    .solicitacao-gestao .info-column {
+        display: none !important;
+    }
+
+    .solicitacao-gestao .notification-layout {
+        display: block;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .solicitacao-gestao .notification-layout > section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-width: 0;
+        gap: 28px;
+    }
+
+    .solicitacao-gestao .notification-card {
+        position: relative;
+
+        width: 100%;
+        height: 145px;
+        min-height: 145px;
+        min-width: 0;
+
+        margin: 0;
+        padding: 16px 19px;
+
+        display: grid;
+
+        grid-template-columns: 40px minmax(0, 1fr) 123px;
+        grid-template-rows: 48px 1fr;
+
+        column-gap: 10px;
+        row-gap: 8px;
+
+        align-items: start;
+
+        background: #fff4eb;
+        border: 1px solid #a6c0d2;
+        border-radius: 17px;
+
+        box-shadow: 0 8px 18px rgba(40, 93, 140, 0.08);
+    }
+
+    .solicitacao-gestao .notification-card > .request-status {
+        grid-column: 1;
+        grid-row: 1;
+
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        min-height: 40px;
+
+        margin: 3px 0 0;
+
+        display: grid;
+        place-items: center;
+
+        visibility: hidden;
+    }
+
+    .solicitacao-gestao .notification-card .request-info {
+        display: none !important;
+    }
+
+    .solicitacao-gestao .request-mobile-info {
+        display: contents;
+    }
+
+    .solicitacao-gestao .request-mobile-top {
+        grid-column: 2;
+        grid-row: 1;
+
+        min-width: 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        gap: 3px;
+        padding-top: 3px;
+    }
+
+    .solicitacao-gestao .request-mobile-top small {
+        display: block;
+
+        font-size: 11px;
+        line-height: 1.3;
+        font-weight: 600;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .solicitacao-gestao .request-mobile-top > b {
+        display: block;
+
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 700;
+
+        overflow-wrap: anywhere;
+    }
+
+    .solicitacao-gestao .request-mobile-info > p {
+        grid-column: 1 / -1;
+        grid-row: 2;
+
+        width: 100%;
+        min-width: 0;
+
+        margin: 0;
+        padding-top: 3px;
+
+        font-size: 14px;
+        line-height: 1.4;
+
+        overflow-wrap: anywhere;
+    }
+
+    .solicitacao-gestao .request-mobile-info strong {
+        font-weight: 700;
+    }
+
+    .solicitacao-gestao .notification-card > .primary-button {
+        grid-column: 3;
+        grid-row: 1;
+
+        width: 123px;
+        min-width: 0;
+
+        height: 42px;
+        min-height: 42px;
+
+        margin: 0;
+        padding: 0 8px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: #4149d8;
+        color: #fff;
+
+        border: none;
+        border-radius: 13px;
+
+        font-size: 16px;
+        font-weight: 700;
+        white-space: nowrap;
+
+        box-shadow: 0 6px 12px #0002;
+    }
+
+}
+
+@media (max-width: 360px) {
+
+    .solicitacao-gestao .notification-card {
+        grid-template-columns: 28px minmax(0, 1fr) 108px;
+        column-gap: 7px;
+        padding: 16px 12px;
+    }
+
+    .solicitacao-gestao .notification-card > .request-status {
+        width: 28px;
+        min-width: 28px;
+    }
+
+    .solicitacao-gestao .notification-card > .primary-button {
+        width: 108px;
+        font-size: 13px;
+    }
+
+    .solicitacao-gestao .request-mobile-top > b {
+        font-size: 14px;
+    }
+
+    .solicitacao-gestao .request-mobile-info > p {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 360px) {
+
+    .solicitacao-gestao .notification-card {
+        padding: 17px 14px;
+    }
+
+    .solicitacao-gestao .notification-card .primary-button {
+        min-width: 108px;
+        font-size: 13px;
+    }
+
+    .solicitacao-gestao .request-mobile-top b {
+        font-size: 13px;
+        padding-right: 0;
+    }
+
+    .solicitacao-gestao .request-mobile-info p {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 360px) {
+
+    .home-page-gestao .filters {
+        gap: 6px;
+        padding-right: 58px;
+    }
+
+    .home-page-gestao .filters button {
+        padding: 7px 10px;
+        font-size: 11px;
+    }
+
+    .home-page-gestao .results-head h2 {
+        font-size: 15px;
+    }
+
+    .home-page-gestao .room-card > b {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .solicitacao-gestao .notification-card {
+        display: grid;
+
+        grid-template-columns: minmax(0, 1fr) 123px;
+        grid-template-rows: auto auto;
+
+        column-gap: 12px;
+        row-gap: 12px;
+
+        height: 145px;
+        min-height: 145px;
+
+        padding: 20px 15px 16px 24px;
+        align-items: start;
+    }
+
+    .solicitacao-gestao .notification-card > .request-status {
+        display: none !important;
+    }
+
+    .solicitacao-gestao .notification-card .request-info {
+        display: none !important;
+    }
+
+    .solicitacao-gestao .request-mobile-info {
+        display: contents;
+    }
+
+    .solicitacao-gestao .request-mobile-top {
+        grid-column: 1;
+        grid-row: 1;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        min-width: 0;
+        padding: 0;
+        gap: 3px;
+    }
+
+    .solicitacao-gestao .request-mobile-top small {
+        font-size: 11px;
+        line-height: 1.4;
+        white-space: normal;
+    }
+
+    .solicitacao-gestao .request-mobile-top b {
+        font-size: 16px;
+        line-height: 1.3;
+        overflow-wrap: anywhere;
+    }
+
+    .solicitacao-gestao .request-mobile-info > p {
+        grid-column: 1;
+        grid-row: 2;
+
+        margin: 0;
+        padding: 0;
+
+        font-size: 14px;
+        line-height: 1.4;
+
+        overflow-wrap: anywhere;
+    }
+
+    .solicitacao-gestao .notification-card > .primary-button {
+        grid-column: 2;
+        grid-row: 1;
+
+        width: 123px;
+        min-width: 123px;
+        height: 42px;
+
+        margin: 0;
+        padding: 0 8px;
+
+        align-self: start;
+        justify-self: end;
+
+        font-size: 15px;
+        white-space: nowrap;
+    }
+
+}
 
 @media (max-width: 600px) {
 
@@ -2282,11 +2871,6 @@ button {
     }
 }
 
-
-/* ==========================================
-   29. PERFIL DO PROFESSOR - CELULARES PEQUENOS
-========================================== */
-
 @media (max-width: 360px) {
 
     .profile-page .profile-card {
@@ -2314,13 +2898,848 @@ button {
     }
 }
 
+@media (max-width: 600px) {
 
-/* ==========================================
-   30. FUNDO DE AGENDAMENTO
-========================================== */
+    .details-page {
+        width: 100%;
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .details-page > .page-heading {
+        margin: 0 0 34px;
+    }
+
+    .details-page > .page-heading h1 {
+        font-size: 21px;
+        line-height: 1.3;
+        margin: 0;
+    }
+
+    .details-page > .page-heading p {
+        display: none;
+    }
+
+    .details-page .details-layout {
+        display: block;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .details-page .place-card {
+        width: 100%;
+        min-width: 0;
+        min-height: 720px;
+        height: calc(100vh - 180px);
+
+        display: flex;
+        flex-direction: column;
+
+        padding: 18px;
+        margin: 0;
+
+        background: #f8f8f8;
+        border: 1px solid #a6c0d2;
+        border-radius: 20px;
+    }
+
+    .details-page .place-title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .details-page .place-title .status {
+        order: 1;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        min-height: 27px;
+        padding: 5px 13px;
+
+        border-radius: 20px;
+        background: #4149d8;
+        color: #fff;
+
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    .details-page .place-title h2 {
+        order: 2;
+        font-size: 28px;
+        line-height: 1.2;
+        margin: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .details-page .place-card > h3 {
+        font-size: 16px;
+        line-height: 1.3;
+        margin: 13px 0 12px;
+    }
+
+    .details-page .place-preview {
+        width: 100%;
+        min-width: 0;
+        min-height: 178px;
+        height: auto;
+
+        padding: 16px;
+        border-radius: 18px;
+        background: #f8dcb8;
+    }
+
+    .details-page .place-preview > b {
+        display: block;
+        font-size: 12px;
+        line-height: 1.3;
+        margin-bottom: 20px;
+    }
+
+    .details-page .preview-content {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        gap: 14px;
+        align-items: center;
+
+        margin: 0;
+    }
+
+    .details-page .photo-placeholder {
+        width: 100%;
+        height: 96px;
+        min-width: 0;
+
+        display: grid;
+        place-items: center;
+
+        background: #fff;
+        border-radius: 16px;
+
+        color: #a6c0d2;
+        font-size: 30px;
+        overflow: hidden;
+    }
+
+    .details-page .preview-information {
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+
+        font-size: 11px;
+        line-height: 1.35;
+    }
+
+    .details-page .preview-information b {
+        display: block;
+        width: 100%;
+        font-size: 11px;
+        font-weight: 600;
+        overflow-wrap: anywhere;
+    }
+
+    .details-page .details-communication {
+        display: block;
+        width: 100%;
+        min-width: 0;
+
+        padding: 14px 16px;
+        margin: 31px 0 0;
+
+        background: #4149d8;
+        color: #fff;
+        border-radius: 17px;
+    }
+
+    .details-page .details-communication > span {
+        display: block;
+        font-size: 12px;
+        font-weight: 700;
+        margin-bottom: 13px;
+    }
+
+    .details-page .details-communication .communication-content {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .details-page .communication-icon {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 50%;
+        background: #5963df;
+    }
+
+    .details-page .communication-icon span {
+        font-size: 20px;
+    }
+
+    .details-page .details-communication p {
+        min-width: 0;
+        margin: 0;
+
+        font-size: 12px;
+        line-height: 1.5;
+        overflow-wrap: anywhere;
+    }
+
+    .details-page .place-side {
+        display: none;
+    }
+
+    .details-page .details-request-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        min-height: 50px;
+        height: 50px;
+
+        margin-top: auto;
+        padding: 0 12px;
+
+        background: #357dbf;
+        color: #fff;
+        border-radius: 14px;
+
+        font-size: 17px;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+
+    .details-page ~ .sidebar {
+        height: 102px;
+        min-height: 102px;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .details-page .place-card {
+        padding: 15px;
+    }
+
+    .details-page .place-preview {
+        padding: 13px;
+    }
+
+    .details-page .preview-content {
+        gap: 10px;
+    }
+
+    .details-page .preview-information {
+        gap: 9px;
+    }
+
+    .details-page .preview-information b {
+        font-size: 10px;
+    }
+
+    .details-page .details-communication {
+        padding: 13px;
+    }
+
+    .details-page .details-communication p {
+        font-size: 11px;
+    }
+}
+
+@media (min-width: 601px) {
+
+    .details-page {
+        width: 100%;
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .details-page .details-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 360px;
+        gap: 28px;
+        align-items: start;
+
+        width: 100%;
+        min-width: 0;
+    }
+
+    .details-page .place-card {
+        width: 100%;
+        min-width: 0;
+        min-height: 535px;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+
+        padding: 28px;
+        margin: 0;
+
+        background: #fff;
+        border: 1px solid #a6c0d2;
+        border-radius: 20px;
+    }
+
+    .details-page .place-title {
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 20px;
+    }
+
+    .details-page .place-title h2 {
+        order: 1;
+        margin: 0;
+
+        font-size: 32px;
+        line-height: 1.2;
+        font-weight: 700;
+    }
+
+    .details-page .place-title .status {
+        order: 2;
+
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 7px 13px;
+        min-height: 32px;
+
+        border-radius: 20px;
+        background: #4149d8;
+        color: #fff;
+
+        font-size: 15px;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+
+    .details-page .place-card > h3 {
+        margin: 26px 0 24px;
+
+        font-size: 18px;
+        line-height: 1.3;
+        font-weight: 600;
+    }
+
+    .details-page .place-preview {
+        width: 100%;
+        min-width: 0;
+        min-height: 303px;
+        height: auto;
+
+        padding: 16px;
+        margin: 0;
+
+        background: #f8dcb8;
+        border-radius: 18px;
+    }
+
+    .details-page .place-preview > b {
+        display: block;
+        margin: 0 0 7px;
+
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .details-page .preview-content {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+        align-items: center;
+        gap: 24px;
+
+        width: 100%;
+        min-width: 0;
+        margin: 0;
+    }
+
+    .details-page .photo-placeholder {
+        width: 100%;
+        height: 249px;
+        min-width: 0;
+
+        display: grid;
+        place-items: center;
+
+        background: #fff;
+        border-radius: 16px;
+
+        color: #a6c0d2;
+        font-size: 34px;
+        overflow: hidden;
+    }
+
+    .details-page .preview-information {
+        min-width: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+
+        font-size: 22px;
+        line-height: 1.35;
+    }
+
+    .details-page .preview-information b {
+        display: block;
+        width: 100%;
+
+        font-size: 22px;
+        font-weight: 600;
+        overflow-wrap: anywhere;
+    }
+
+    .details-page .place-card .details-communication {
+        display: none;
+    }
+
+    .details-page .place-card .details-request-button {
+        display: none;
+    }
+
+    .details-page .place-side {
+        width: 100%;
+        min-width: 0;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        padding: 28px;
+        margin: 0;
+
+        background: #fff;
+        border: 1px solid #a6c0d2;
+        border-radius: 20px;
+    }
+
+    .details-page .place-side > b {
+        display: block;
+        margin-bottom: 24px;
+
+        color: #357dbf;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .details-page .place-side .communication {
+        width: 100%;
+        min-width: 0;
+
+        padding: 18px 16px;
+        margin: 0 0 24px;
+
+        background: #4149d8;
+        color: #fff;
+        border-radius: 18px;
+    }
+
+    .details-page .place-side .communication > span {
+        display: block;
+        margin-bottom: 10px;
+
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .details-page .place-side .communication > small {
+        display: block;
+        margin-bottom: 10px;
+
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .details-page .place-side .communication-content {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .details-page .place-side .communication-icon {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 50%;
+        background: #5963df;
+    }
+
+    .details-page .place-side .alto-falante-icone {
+        width: 25px;
+        height: 25px;
+        object-fit: contain;
+    }
+
+    .details-page .place-side .communication p {
+        flex: 1;
+        min-width: 0;
+        margin: 0;
+
+        color: #fff;
+        font-size: 13px;
+        line-height: 1.4;
+        overflow-wrap: anywhere;
+    }
+
+    .details-page .place-side .blue-wide {
+        width: 100%;
+        min-height: 50px;
+        height: 50px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: 0;
+        padding: 0 15px;
+
+        background: #357dbf;
+        color: #fff;
+        border-radius: 14px;
+
+        font-size: 17px;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1100px) {
+
+    .details-page .details-layout {
+        grid-template-columns: minmax(0, 1fr) 300px;
+        gap: 20px;
+    }
+
+    .details-page .place-card {
+        padding: 22px;
+    }
+
+    .details-page .place-side {
+        padding: 22px;
+    }
+
+    .details-page .preview-content {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        gap: 16px;
+    }
+
+    .details-page .preview-information,
+    .details-page .preview-information b {
+        font-size: 16px;
+    }
+
+    .details-page .photo-placeholder {
+        height: 210px;
+    }
+}
+
+.communication-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alto-falante-icone {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+@media (max-width: 600px) {
+    .details-page .alto-falante-icone {
+        width: 24px;
+        height: 24px;
+    }
+}
 
 .booking-background {
     min-height: calc(100vh - 88px);
     padding: 48px 30px;
     background: linear-gradient(115deg, #a6bcc9 0%, #e7e5e1 43%, #fff4eb 78%);
+}
+
+@media (max-width: 600px) {
+    .profile-page .page-heading > small {
+        display: block;
+        color: #357dbf;
+        font-size: 11px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+}
+
+.solicitacao-heading-mobile,
+.request-mobile-info {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .solicitacao-page {
+        width: 100%;
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .solicitacao-heading-desktop {
+        display: none;
+    }
+
+    .solicitacao-heading-mobile {
+        display: block;
+        margin: 0 0 32px;
+    }
+
+    .solicitacao-heading-mobile .page-heading {
+        margin: 0;
+    }
+
+    .solicitacao-heading-mobile .page-heading > small {
+        display: block;
+        color: #357dbf;
+        font-size: 14px;
+        font-weight: 700;
+        margin: 0 0 2px;
+    }
+
+    .solicitacao-heading-mobile .page-heading h1 {
+        font-size: 22px;
+        line-height: 1.2;
+        margin: 0;
+        padding-left: 6px;
+    }
+
+    .solicitacao-heading-mobile .page-heading p {
+        display: none;
+    }
+
+    .solicitacao-page .results-head,
+    .solicitacao-page .info-column {
+        display: none !important;
+    }
+
+    .solicitacao-page .notification-layout {
+        display: block;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .solicitacao-page .notification-layout > section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-width: 0;
+        gap: 28px;
+    }
+
+    .solicitacao-page .notification-card {
+        width: 100%;
+        height: 145px;
+        min-height: 145px;
+        margin: 0;
+        padding: 16px 19px;
+        display: grid;
+        grid-template-columns: 40px minmax(0, 1fr) 123px;
+        grid-template-rows: 48px 1fr;
+        column-gap: 10px;
+        row-gap: 8px;
+        align-items: start;
+        position: relative;
+        background: #fff4eb;
+        border: 1px solid #a6c0d2;
+        border-radius: 17px;
+    }
+
+    .solicitacao-page .request-status {
+        grid-column: 1;
+        grid-row: 1;
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        min-height: 40px;
+        margin: 3px 0 0;
+        border-radius: 12px;
+        display: grid;
+        place-items: center;
+    }
+
+    .solicitacao-page .request-status img {
+        width: 22px;
+        height: 22px;
+        object-fit: contain;
+    }
+
+    .solicitacao-page .request-info {
+        display: none !important;
+    }
+
+    .solicitacao-page .request-mobile-info {
+        display: contents;
+    }
+
+    .solicitacao-page .request-mobile-top {
+        grid-column: 2;
+        grid-row: 1;
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3px;
+        padding-top: 3px;
+    }
+
+    .solicitacao-page .request-mobile-top small {
+        font-size: 11px;
+        line-height: 1.3;
+        font-weight: 600;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .solicitacao-page .request-mobile-top > b {
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 700;
+        overflow-wrap: anywhere;
+    }
+
+    .solicitacao-page .request-mobile-info > p {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        width: 100%;
+        min-width: 0;
+        margin: 0;
+        padding-top: 3px;
+        font-size: 14px;
+        line-height: 1.4;
+        overflow-wrap: anywhere;
+    }
+
+    .solicitacao-page .request-mobile-info strong {
+        font-weight: 700;
+    }
+
+    .solicitacao-page .notification-card > .primary-button {
+        grid-column: 3;
+        grid-row: 1;
+        width: 123px;
+        min-width: 0;
+        height: 42px;
+        min-height: 42px;
+        margin: 0;
+        padding: 0 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #4149d8;
+        color: #fff;
+        border-radius: 13px;
+        font-size: 16px;
+        font-weight: 700;
+        white-space: nowrap;
+        box-shadow: 0 6px 12px #0002;
+    }
+
+    .app-shell {
+        padding-bottom: 102px !important;
+        background: linear-gradient(180deg, #fff4eb 0%, #fff4eb 48%, #dce8ed 100%);
+    }
+
+    .sidebar {
+        height: 102px !important;
+        min-height: 102px !important;
+        padding: 8px 5px 10px !important;
+        background: #357dbf !important;
+    }
+
+    .sidebar nav {
+        height: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .nav-item {
+        height: 100%;
+        padding: 5px 1px;
+        gap: 4px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .nav-item .icon {
+        font-size: 29px;
+    }
+
+    .nav-item.selected {
+        background: transparent;
+        color: #ffd49e;
+    }
+}
+
+@media (max-width: 390px) {
+    .solicitacao-page .notification-card {
+        grid-template-columns: 36px minmax(0, 1fr) 108px;
+        column-gap: 8px;
+        padding: 15px 12px;
+    }
+
+    .solicitacao-page .request-status {
+        width: 36px;
+        height: 36px;
+        min-width: 36px;
+        min-height: 36px;
+    }
+
+    .solicitacao-page .notification-card > .primary-button {
+        width: 108px;
+        font-size: 14px;
+    }
+
+    .solicitacao-page .request-mobile-top small {
+        font-size: 10px;
+    }
+
+    .solicitacao-page .request-mobile-top > b {
+        font-size: 15px;
+    }
+
+    .solicitacao-page .request-mobile-info > p {
+        font-size: 12px;
+    }
+
+    .nav-item {
+        font-size: 10px;
+    }
+
+    .nav-item .icon {
+        font-size: 27px;
+    }
 }

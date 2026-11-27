@@ -11,6 +11,8 @@ export default function TelaInicialGESTAO({
   const [busca, setBusca] = useState('');
   const [filtro, setFiltro] = useState('Todas');
 
+  const nomeUsuario = profileData?.nome || 'Alexia';
+
   const filtradas = salas
     .map((sala, index) => ({
       ...sala,
@@ -35,25 +37,33 @@ export default function TelaInicialGESTAO({
     }
   };
 
+  const verTodas = () => {
+    setBusca('');
+    setFiltro('Todas');
+  };
+
   return (
-    <>
+    <div className="home-page home-page-gestao">
+
+      <div className="welcome">
+        Olá, {nomeUsuario}
+      </div>
+
       <Heading
         title="Minhas salas"
         desc="Gerencie as salas cadastradas e acompanhe suas condições de uso."
       />
 
-      <div className="welcome">
-        Olá, {profileData?.nome || 'Juscelino'}!
-      </div>
-
       <div className="home-title-row">
+
         <div className="search-box">
           <span className="icon">⌕</span>
 
           <input
+            type="text"
             value={busca}
             onChange={(e) => setBusca(e.target.value)}
-            placeholder="Pesquisar sala..."
+            placeholder="Buscar por salas, eventos e aulas"
           />
         </div>
 
@@ -61,9 +71,11 @@ export default function TelaInicialGESTAO({
           className="add-button"
           onClick={() => go('cadastroSalas')}
           title="Adicionar sala"
+          aria-label="Adicionar sala"
         >
           +
         </button>
+
       </div>
 
       <div className="filters">
@@ -85,14 +97,17 @@ export default function TelaInicialGESTAO({
       </div>
 
       <div className="results-head">
-        <h2>Salas cadastradas</h2>
 
-        <button onClick={() => go('solicitacaoGestao')}>
-          Solicitações
+        <h2>Resultados</h2>
+
+        <button onClick={verTodas}>
+          Ver todas
         </button>
+
       </div>
 
       <div className="room-grid">
+
         {filtradas.map((sala) => (
           <article
             className="room-card"
@@ -108,16 +123,20 @@ export default function TelaInicialGESTAO({
             tabIndex={0}
             title={`Ver detalhes de ${sala.nome}`}
           >
+
             <span className={`status ${sala.classe || ''}`}>
               {sala.status}
             </span>
 
             <b>{sala.nome}</b>
+
             <p>{sala.local}</p>
 
             <button
+              type="button"
               className="edit-room"
               title="Editar sala"
+              aria-label={`Editar ${sala.nome}`}
               onClick={(e) => {
                 e.stopPropagation();
                 go(`cadastroSalas?editar=${sala.indexOriginal}`);
@@ -125,8 +144,10 @@ export default function TelaInicialGESTAO({
             >
               ✎
             </button>
+
           </article>
         ))}
+
       </div>
 
       {filtradas.length === 0 && (
@@ -134,6 +155,7 @@ export default function TelaInicialGESTAO({
           Nenhuma sala encontrada.
         </div>
       )}
-    </>
+
+    </div>
   );
 }

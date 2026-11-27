@@ -7,9 +7,11 @@ export default function DetalhesdoLocal({
   sala,
   onRequest
 }) {
+  const altoFalante = '/assets/AltoFalanteIcone.png';
+
   if (!sala) {
     return (
-      <>
+      <div className="details-page">
         <Heading
           title="Detalhes do Local"
           desc="Reservas / Detalhes do Local"
@@ -25,7 +27,7 @@ export default function DetalhesdoLocal({
         >
           Voltar para Minhas salas
         </button>
-      </>
+      </div>
     );
   }
 
@@ -35,9 +37,12 @@ export default function DetalhesdoLocal({
   const quantidade = sala.quantidade || sala.capacidade;
   const descricao = sala.descricao || '';
   const imagem = sala.imagem;
+  const professor = sala.professor || sala.professora || '';
+  const horario = sala.horario || sala.horarios || '';
 
   return (
-    <>
+    <div className="details-page">
+
       <Heading
         title="Detalhes do Local"
         desc="Reservas / Detalhes do Local"
@@ -46,6 +51,7 @@ export default function DetalhesdoLocal({
       <div className="details-layout">
 
         <section className="place-card">
+
           <div className="place-title">
             <h2>{nome}</h2>
 
@@ -57,9 +63,11 @@ export default function DetalhesdoLocal({
           <h3>Detalhes do local</h3>
 
           <div className="place-preview">
+
             <b>{nome.toUpperCase()}</b>
 
             <div className="preview-content">
+
               <div className="photo-placeholder">
                 {imagem ? (
                   <img
@@ -77,31 +85,103 @@ export default function DetalhesdoLocal({
                 )}
               </div>
 
-              <div>
+              <div className="preview-information">
+
                 <b>{local}</b>
+
+                {professor && (
+                  <b>{professor}</b>
+                )}
 
                 {quantidade && (
                   <b>Máximo {quantidade} alunos</b>
                 )}
 
+                {horario && (
+                  <b>{horario}</b>
+                )}
+
                 {descricao && (
                   <b>{descricao}</b>
                 )}
+
               </div>
+
             </div>
           </div>
+
+          {/* COMUNICAÇÃO MOBILE */}
+          <div className="communication details-communication">
+
+            <span>Comunicação</span>
+
+            <div className="communication-content">
+
+              <div className="communication-icon">
+                <img
+                  src={altoFalante}
+                  alt="Ícone de comunicação"
+                  className="alto-falante-icone"
+                />
+              </div>
+
+              <p>
+                {professor
+                  ? `${professor} confirmou a reserva da sala para hoje.`
+                  : `${nome} está atualmente com o status: ${status}.`}
+              </p>
+
+            </div>
+
+          </div>
+
+          {/* BOTÃO MOBILE */}
+          {typeof onRequest === 'function' ? (
+            <button
+              type="button"
+              className="blue-wide details-request-button"
+              onClick={onRequest}
+            >
+              Enviar Solicitação
+            </button>
+          ) : (
+            <button
+              type="button"
+              className="blue-wide details-request-button"
+              onClick={() => go('homeManager')}
+            >
+              Voltar
+            </button>
+          )}
+
         </section>
 
+        {/* COLUNA DESKTOP */}
         <aside className="place-side">
+
           <b>Detalhes do local</b>
 
           <div className="communication">
+
             <span>Comunicação</span>
             <small>Status da sala</small>
 
-            <p>
-              {nome} está atualmente com o status: {status}.
-            </p>
+            <div className="communication-content">
+
+              <div className="communication-icon">
+                <img
+                  src={altoFalante}
+                  alt="Ícone de comunicação"
+                  className="alto-falante-icone"
+                />
+              </div>
+
+              <p>
+                {nome} está atualmente com o status: {status}.
+              </p>
+
+            </div>
+
           </div>
 
           {typeof onRequest === 'function' ? (
@@ -121,9 +201,10 @@ export default function DetalhesdoLocal({
               Voltar
             </button>
           )}
+
         </aside>
 
       </div>
-    </>
+    </div>
   );
 }

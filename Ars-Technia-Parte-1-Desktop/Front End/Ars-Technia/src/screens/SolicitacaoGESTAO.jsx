@@ -25,43 +25,100 @@ const pedidos = [
 
 export default function SolicitacaoGESTAO({ go }) {
   return (
-    <>
-      <Heading
-        title="Solicitações"
-        desc="Consulte e analise os pedidos de reserva enviados pelos professores."
-      />
+    <div className="solicitacao-page solicitacao-gestao">
 
-      <div className="results-head">
+      {/* Cabeçalho desktop */}
+      <div className="solicitacao-heading-desktop">
+        <Heading
+          title="Solicitações"
+          desc="Consulte e analise os pedidos de reserva enviados pelos professores."
+        />
+      </div>
+
+      {/* Cabeçalho mobile */}
+      <div className="solicitacao-heading-mobile">
+        <Heading
+          eyebrow="GESTÃO"
+          title="Notificações"
+          desc=""
+        />
+      </div>
+
+      {/* Cabeçalho dos resultados */}
+      <div className="results-head solicitacao-gestao-results">
         <h2>Solicitações recebidas</h2>
         <span>03 pendentes</span>
       </div>
 
       <div className="notification-layout">
-        <section>
+
+        <section className="solicitacao-gestao-lista">
+
           {pedidos.map((pedido, index) => (
-            <article className="notification-card" key={index}>
+            <article
+              className="notification-card"
+              key={`${pedido.sala}-${index}`}
+            >
+
+              {/* Ícone/coluna do card */}
               <div className="request-status">
+                <span aria-hidden="true"></span>
               </div>
 
+              {/* Informações desktop */}
               <div className="request-info">
-                <small>{pedido.data} • {pedido.horario}</small>
+                <small>
+                  {pedido.data} • {pedido.horario}
+                </small>
+
                 <b>{pedido.sala}</b>
-                <p>Professor: {pedido.professor}</p>
+
+                <p>
+                  Professor: {pedido.professor}
+                </p>
               </div>
 
+              {/* Informações mobile */}
+              <div className="request-mobile-info">
+
+                <div className="request-mobile-top">
+                  <small>
+                    {pedido.data} · {pedido.horario}
+                  </small>
+
+                  <b>{pedido.sala}</b>
+                </div>
+
+                <p>
+                  Professor <strong>{pedido.professor}</strong>
+                </p>
+
+              </div>
+
+              {/* Botão de detalhes */}
               <button
+                type="button"
                 className="primary-button"
-                onClick={() => go(`verificacao?pedido=${index}`)}
+                onClick={() => {
+                  if (typeof go === 'function') {
+                    go(`verificacao?pedido=${index}`);
+                  }
+                }}
               >
                 Ver Detalhes
               </button>
+
             </article>
           ))}
+
         </section>
 
+        {/* Coluna lateral desktop */}
         <aside className="info-column">
+
           <div className="info-callout">
             <h3>Central de solicitações</h3>
+
             <p>
               Analise os pedidos recebidos e escolha se a reserva
               poderá ser realizada.
@@ -70,12 +127,17 @@ export default function SolicitacaoGESTAO({ go }) {
 
           <div className="info-box">
             <b>Informações</b>
+
             <p>
-              Verifique a disponibilidade da sala antes de aprovar uma solicitação.
+              Verifique a disponibilidade da sala antes de aprovar
+              uma solicitação.
             </p>
           </div>
+
         </aside>
+
       </div>
-    </>
+
+    </div>
   );
 }

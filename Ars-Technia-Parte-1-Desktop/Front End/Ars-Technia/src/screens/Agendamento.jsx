@@ -53,11 +53,12 @@ export default function Agendamento({
     profileData?.nome
   ]);
 
-  // Gera os horários disponíveis de 30 em 30 minutos.
+  // Gera os horários disponíveis de 30 em 30 minutos,
+  // das 07:00 até às 23:00.
   const horariosDisponiveis = Array.from(
-    { length: 23 },
+    { length: 33 },
     (_, index) => {
-      const horas = 8 + Math.floor(index / 2);
+      const horas = 7 + Math.floor(index / 2);
       const minutos = index % 2 === 0 ? '00' : '30';
 
       return `${String(horas).padStart(2, '0')}:${minutos}`;
@@ -71,7 +72,7 @@ export default function Agendamento({
 
       if (!horariosDisponiveis.includes(horario)) {
         window.alert(
-          'Horário inválido! Escolha um horário entre 08:00 e 19:00.'
+          'Horário inválido! Escolha um horário entre 07:00 e 23:00.'
         );
         return;
       }
@@ -195,7 +196,7 @@ export default function Agendamento({
 
         {!visualizando && (
           <p>
-            Horários disponíveis: das 08:00 às 19:00.
+            Horários disponíveis: das 07:00 às 23:00.
           </p>
         )}
 

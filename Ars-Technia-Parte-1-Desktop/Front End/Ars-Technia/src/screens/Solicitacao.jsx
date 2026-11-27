@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Heading from '../components/Heading.jsx';
 
@@ -61,19 +60,39 @@ const solicitacoes = [
 ];
 
 export default function Solicitacao({ go, onDetails }) {
+  const irParaAgendamento = () => {
+    if (typeof go === 'function') go('agendamento');
+  };
+
+  const verDetalhes = (item) => {
+    if (typeof onDetails === 'function') onDetails(item);
+  };
+
   return (
-    <>
-      <Heading
-        eyebrow="MINHAS RESERVAS"
-        title="Notificações"
-        desc="Acompanhe suas solicitações de reserva e os resultados das análises."
-      />
+    <div className="solicitacao-page">
+      {/* Cabeçalho original: aparece no desktop */}
+      <div className="solicitacao-heading-desktop">
+        <Heading
+          eyebrow="MINHAS RESERVAS"
+          title="Notificações"
+          desc="Acompanhe suas solicitações de reserva e os resultados das análises."
+        />
+      </div>
+
+      {/* Cabeçalho da referência: aparece somente no mobile */}
+      <div className="solicitacao-heading-mobile">
+        <Heading
+          eyebrow="PROFESSOR"
+          title="Notificações"
+          desc=""
+        />
+      </div>
 
       <div className="results-head">
         <h2>Minhas solicitações</h2>
-
         <button
-          onClick={() => go('agendamento')}
+          type="button"
+          onClick={irParaAgendamento}
           title="Cadastrar agendamento"
         >
           <img
@@ -87,29 +106,35 @@ export default function Solicitacao({ go, onDetails }) {
       <div className="notification-layout">
         <section>
           {solicitacoes.map((item, index) => (
-            <article
-              className="notification-card"
-              key={index}
-            >
+            <article className="notification-card" key={`${item.sala}-${index}`}>
               <div className={`request-status ${item.classe}`}>
-                <img
-                  src={item.icone}
-                  alt={item.status}
-                />
+                <img src={item.icone} alt={item.status} />
               </div>
 
+              {/* Conteúdo original do desktop */}
               <div className="request-info">
                 <small>
                   {item.data} • {item.horario}
                 </small>
-
                 <b>{item.sala}</b>
                 <p>{item.status}</p>
               </div>
 
+              {/* Conteúdo organizado para a referência mobile */}
+              <div className="request-mobile-info">
+                <div className="request-mobile-top">
+                  <small>Hoje · 14:05</small>
+                  <b>{item.sala}</b>
+                </div>
+                <p>
+                  Professora <strong>{item.professor}</strong>
+                </p>
+              </div>
+
               <button
+                type="button"
                 className="primary-button"
-                onClick={() => onDetails(item)}
+                onClick={() => verDetalhes(item)}
               >
                 Ver Detalhes
               </button>
@@ -120,14 +145,9 @@ export default function Solicitacao({ go, onDetails }) {
         <aside className="info-column">
           <div className="info-callout">
             <span className="large-line-icon">
-              <img
-                src="/assets/SininhoPreto.png"
-                alt="Sininho de notificações"
-              />
+              <img src="/assets/SininhoPreto.png" alt="Sininho de notificações" />
             </span>
-
             <h3>Acompanhe seus pedidos</h3>
-
             <p>
               Você pode consultar o andamento das suas solicitações
               e verificar as respostas enviadas pela Gestão.
@@ -136,13 +156,12 @@ export default function Solicitacao({ go, onDetails }) {
 
           <div className="info-box">
             <b>Legenda de status</b>
-
             <p><span className="dot green"></span> Aceita</p>
             <p><span className="dot red"></span> Recusada</p>
             <p><span className="dot maintenance-yellow"></span> Manutenção</p>
           </div>
         </aside>
       </div>
-    </>
+    </div>
   );
 }
