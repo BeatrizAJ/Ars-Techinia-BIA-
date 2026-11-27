@@ -1,0 +1,580 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|c:\\users\\54535214816\\downloads\\arstechnia\\arstechnia.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|solutionrelative:arstechnia.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|c:\\users\\54535214816\\downloads\\arstechnia\\arstechnia.api\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|solutionrelative:arstechnia.api\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|c:\\users\\54535214816\\downloads\\arstechnia\\arstechnia.api\\services\\reservaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|solutionrelative:arstechnia.api\\services\\reservaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|c:\\users\\54535214816\\downloads\\arstechnia\\arstechnia.api\\services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|solutionrelative:arstechnia.api\\services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|c:\\users\\54535214816\\downloads\\arstechnia\\arstechnia.api\\services\\historicoreservaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|solutionrelative:arstechnia.api\\services\\historicoreservaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|c:\\users\\54535214816\\downloads\\arstechnia\\arstechnia.api\\services\\localservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|solutionrelative:arstechnia.api\\services\\localservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|c:\\users\\54535214816\\downloads\\arstechnia\\arstechnia.api\\models\\recursosdidatico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|solutionrelative:arstechnia.api\\models\\recursosdidatico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|c:\\users\\54535214816\\downloads\\arstechnia\\arstechnia.api\\models\\papei.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|solutionrelative:arstechnia.api\\models\\papei.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|c:\\users\\54535214816\\downloads\\arstechnia\\arstechnia.api\\models\\locai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|solutionrelative:arstechnia.api\\models\\locai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|c:\\users\\54535214816\\downloads\\arstechnia\\arstechnia.api\\interfaces\\ilocalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|solutionrelative:arstechnia.api\\interfaces\\ilocalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|c:\\users\\54535214816\\downloads\\arstechnia\\arstechnia.api\\interfaces\\iloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|solutionrelative:arstechnia.api\\interfaces\\iloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|c:\\users\\54535214816\\downloads\\arstechnia\\arstechnia.api\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|solutionrelative:arstechnia.api\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|c:\\users\\54535214816\\downloads\\arstechnia\\arstechnia.api\\controllers\\reservascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|solutionrelative:arstechnia.api\\controllers\\reservascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|c:\\users\\54535214816\\downloads\\arstechnia\\arstechnia.api\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|solutionrelative:arstechnia.api\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|c:\\users\\54535214816\\downloads\\arstechnia\\arstechnia.api\\controllers\\locaiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|solutionrelative:arstechnia.api\\controllers\\locaiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|c:\\users\\54535214816\\downloads\\arstechnia\\arstechnia.api\\controllers\\historicoreservascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|solutionrelative:arstechnia.api\\controllers\\historicoreservascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|c:\\users\\54535214816\\downloads\\arstechnia\\arstechnia.api\\dtos\\atualizarlocaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|solutionrelative:arstechnia.api\\dtos\\atualizarlocaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|c:\\users\\54535214816\\downloads\\arstechnia\\arstechnia.api\\dtos\\atualizarusuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|solutionrelative:arstechnia.api\\dtos\\atualizarusuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|c:\\users\\54535214816\\downloads\\arstechnia\\arstechnia.api\\dtos\\criarlocaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|solutionrelative:arstechnia.api\\dtos\\criarlocaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|c:\\users\\54535214816\\downloads\\arstechnia\\arstechnia.api\\interfaces\\ihistoricoreservaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|solutionrelative:arstechnia.api\\interfaces\\ihistoricoreservaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|c:\\users\\54535214816\\downloads\\arstechnia\\arstechnia.api\\interfaces\\iusuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|solutionrelative:arstechnia.api\\interfaces\\iusuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|c:\\users\\54535214816\\downloads\\arstechnia\\arstechnia.api\\interfaces\\ireservaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|solutionrelative:arstechnia.api\\interfaces\\ireservaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|c:\\users\\54535214816\\downloads\\arstechnia\\arstechnia.api\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|solutionrelative:arstechnia.api\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|c:\\users\\54535214816\\downloads\\arstechnia\\arstechnia.api\\models\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|solutionrelative:arstechnia.api\\models\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|c:\\users\\54535214816\\downloads\\arstechnia\\arstechnia.api\\models\\historicoreserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|solutionrelative:arstechnia.api\\models\\historicoreserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|c:\\users\\54535214816\\downloads\\arstechnia\\arstechnia.api\\models\\equipamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|solutionrelative:arstechnia.api\\models\\equipamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|c:\\users\\54535214816\\downloads\\arstechnia\\arstechnia.api\\dtos\\reservadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|solutionrelative:arstechnia.api\\dtos\\reservadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|c:\\users\\54535214816\\downloads\\arstechnia\\arstechnia.api\\dtos\\historicoreservadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|solutionrelative:arstechnia.api\\dtos\\historicoreservadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|c:\\users\\54535214816\\downloads\\arstechnia\\arstechnia.api\\dtos\\localdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|solutionrelative:arstechnia.api\\dtos\\localdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|c:\\users\\54535214816\\downloads\\arstechnia\\arstechnia.api\\dtos\\decidirreservadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|solutionrelative:arstechnia.api\\dtos\\decidirreservadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|c:\\users\\54535214816\\downloads\\arstechnia\\arstechnia.api\\dtos\\criarreservadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|solutionrelative:arstechnia.api\\dtos\\criarreservadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|c:\\users\\54535214816\\downloads\\arstechnia\\arstechnia.api\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|solutionrelative:arstechnia.api\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|c:\\users\\54535214816\\downloads\\arstechnia\\arstechnia.api\\dtos\\criarusuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|solutionrelative:arstechnia.api\\dtos\\criarusuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|c:\\users\\54535214816\\downloads\\arstechnia\\arstechnia.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CA0927FD-D8D4-7157-9B72-EA8FF70A43D3}|ArsTechnia.API\\ArsTechnia.API.csproj|solutionrelative:arstechnia.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\54535214816\\AppData\\Roaming\\Microsoft\\UserSecrets\\3e955c45-4651-4e3b-a39d-1fb8fbe9d2c1\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RecursosDidatico.cs",
+              "DocumentMoniker": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Models\\RecursosDidatico.cs",
+              "RelativeDocumentMoniker": "ArsTechnia.API\\Models\\RecursosDidatico.cs",
+              "ToolTip": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Models\\RecursosDidatico.cs",
+              "RelativeToolTip": "ArsTechnia.API\\Models\\RecursosDidatico.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-27T16:35:34.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LocalService.cs",
+              "DocumentMoniker": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Services\\LocalService.cs",
+              "RelativeDocumentMoniker": "ArsTechnia.API\\Services\\LocalService.cs",
+              "ToolTip": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Services\\LocalService.cs",
+              "RelativeToolTip": "ArsTechnia.API\\Services\\LocalService.cs",
+              "ViewState": "AgIAAMgAAAAAAAAAAAAQwNsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T12:24:01.544Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ReservaService.cs",
+              "DocumentMoniker": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Services\\ReservaService.cs",
+              "RelativeDocumentMoniker": "ArsTechnia.API\\Services\\ReservaService.cs",
+              "ToolTip": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Services\\ReservaService.cs",
+              "RelativeToolTip": "ArsTechnia.API\\Services\\ReservaService.cs",
+              "ViewState": "AgIAACQBAAAAAAAAAAAQwIoBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T11:37:29.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsuarioService.cs",
+              "DocumentMoniker": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Services\\UsuarioService.cs",
+              "RelativeDocumentMoniker": "ArsTechnia.API\\Services\\UsuarioService.cs",
+              "ToolTip": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Services\\UsuarioService.cs",
+              "RelativeToolTip": "ArsTechnia.API\\Services\\UsuarioService.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAkwBkAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T13:29:34.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginService.cs",
+              "DocumentMoniker": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Services\\LoginService.cs",
+              "RelativeDocumentMoniker": "ArsTechnia.API\\Services\\LoginService.cs",
+              "ToolTip": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Services\\LoginService.cs",
+              "RelativeToolTip": "ArsTechnia.API\\Services\\LoginService.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAmwG0AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T11:40:32.475Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HistoricoReservaService.cs",
+              "DocumentMoniker": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Services\\HistoricoReservaService.cs",
+              "RelativeDocumentMoniker": "ArsTechnia.API\\Services\\HistoricoReservaService.cs",
+              "ToolTip": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Services\\HistoricoReservaService.cs",
+              "RelativeToolTip": "ArsTechnia.API\\Services\\HistoricoReservaService.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAAwE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T13:21:40.66Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Program.cs",
+              "RelativeDocumentMoniker": "ArsTechnia.API\\Program.cs",
+              "ToolTip": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Program.cs",
+              "RelativeToolTip": "ArsTechnia.API\\Program.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAmwGMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T11:34:17.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Papei.cs",
+              "DocumentMoniker": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Models\\Papei.cs",
+              "RelativeDocumentMoniker": "ArsTechnia.API\\Models\\Papei.cs",
+              "ToolTip": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Models\\Papei.cs",
+              "RelativeToolTip": "ArsTechnia.API\\Models\\Papei.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-27T16:35:34.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Locai.cs",
+              "DocumentMoniker": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Models\\Locai.cs",
+              "RelativeDocumentMoniker": "ArsTechnia.API\\Models\\Locai.cs",
+              "ToolTip": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Models\\Locai.cs",
+              "RelativeToolTip": "ArsTechnia.API\\Models\\Locai.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-27T16:35:30.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ILocalService.cs",
+              "DocumentMoniker": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Interfaces\\ILocalService.cs",
+              "RelativeDocumentMoniker": "ArsTechnia.API\\Interfaces\\ILocalService.cs",
+              "ToolTip": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Interfaces\\ILocalService.cs",
+              "RelativeToolTip": "ArsTechnia.API\\Interfaces\\ILocalService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-27T16:35:39.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ILoginService.cs",
+              "DocumentMoniker": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Interfaces\\ILoginService.cs",
+              "RelativeDocumentMoniker": "ArsTechnia.API\\Interfaces\\ILoginService.cs",
+              "ToolTip": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Interfaces\\ILoginService.cs",
+              "RelativeToolTip": "ArsTechnia.API\\Interfaces\\ILoginService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T11:48:19.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "ArsTechnia.API\\Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "ArsTechnia.API\\Controllers\\UsuariosController.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAQwIEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T13:24:52.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ReservasController.cs",
+              "DocumentMoniker": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Controllers\\ReservasController.cs",
+              "RelativeDocumentMoniker": "ArsTechnia.API\\Controllers\\ReservasController.cs",
+              "ToolTip": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Controllers\\ReservasController.cs",
+              "RelativeToolTip": "ArsTechnia.API\\Controllers\\ReservasController.cs",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAQwKgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T11:36:23.361Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "ArsTechnia.API\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "ArsTechnia.API\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAwDMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T11:16:13.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LocaisController.cs",
+              "DocumentMoniker": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Controllers\\LocaisController.cs",
+              "RelativeDocumentMoniker": "ArsTechnia.API\\Controllers\\LocaisController.cs",
+              "ToolTip": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Controllers\\LocaisController.cs",
+              "RelativeToolTip": "ArsTechnia.API\\Controllers\\LocaisController.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAowIcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T13:23:37.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "HistoricoReservasController.cs",
+              "DocumentMoniker": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Controllers\\HistoricoReservasController.cs",
+              "RelativeDocumentMoniker": "ArsTechnia.API\\Controllers\\HistoricoReservasController.cs",
+              "ToolTip": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Controllers\\HistoricoReservasController.cs",
+              "RelativeToolTip": "ArsTechnia.API\\Controllers\\HistoricoReservasController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwDcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T16:38:49.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AtualizarLocalDTO.cs",
+              "DocumentMoniker": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\DTOs\\AtualizarLocalDTO.cs",
+              "RelativeDocumentMoniker": "ArsTechnia.API\\DTOs\\AtualizarLocalDTO.cs",
+              "ToolTip": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\DTOs\\AtualizarLocalDTO.cs",
+              "RelativeToolTip": "ArsTechnia.API\\DTOs\\AtualizarLocalDTO.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAgwBwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T12:13:01.424Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AtualizarUsuarioDTO.cs",
+              "DocumentMoniker": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\DTOs\\AtualizarUsuarioDTO.cs",
+              "RelativeDocumentMoniker": "ArsTechnia.API\\DTOs\\AtualizarUsuarioDTO.cs",
+              "ToolTip": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\DTOs\\AtualizarUsuarioDTO.cs",
+              "RelativeToolTip": "ArsTechnia.API\\DTOs\\AtualizarUsuarioDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T13:04:06.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CriarLocalDTO.cs",
+              "DocumentMoniker": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\DTOs\\CriarLocalDTO.cs",
+              "RelativeDocumentMoniker": "ArsTechnia.API\\DTOs\\CriarLocalDTO.cs",
+              "ToolTip": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\DTOs\\CriarLocalDTO.cs",
+              "RelativeToolTip": "ArsTechnia.API\\DTOs\\CriarLocalDTO.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAQwBwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T13:04:45.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IHistoricoReservaService.cs",
+              "DocumentMoniker": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Interfaces\\IHistoricoReservaService.cs",
+              "RelativeDocumentMoniker": "ArsTechnia.API\\Interfaces\\IHistoricoReservaService.cs",
+              "ToolTip": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Interfaces\\IHistoricoReservaService.cs",
+              "RelativeToolTip": "ArsTechnia.API\\Interfaces\\IHistoricoReservaService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-27T16:35:41.598Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IUsuarioService.cs",
+              "DocumentMoniker": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Interfaces\\IUsuarioService.cs",
+              "RelativeDocumentMoniker": "ArsTechnia.API\\Interfaces\\IUsuarioService.cs",
+              "ToolTip": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Interfaces\\IUsuarioService.cs",
+              "RelativeToolTip": "ArsTechnia.API\\Interfaces\\IUsuarioService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-27T16:35:47.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IReservaService.cs",
+              "DocumentMoniker": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Interfaces\\IReservaService.cs",
+              "RelativeDocumentMoniker": "ArsTechnia.API\\Interfaces\\IReservaService.cs",
+              "ToolTip": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Interfaces\\IReservaService.cs",
+              "RelativeToolTip": "ArsTechnia.API\\Interfaces\\IReservaService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-27T16:35:44.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "ArsTechnia.API\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Models\\Usuario.cs",
+              "RelativeToolTip": "ArsTechnia.API\\Models\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-27T16:35:37.861Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Reserva.cs",
+              "DocumentMoniker": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Models\\Reserva.cs",
+              "RelativeDocumentMoniker": "ArsTechnia.API\\Models\\Reserva.cs",
+              "ToolTip": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Models\\Reserva.cs",
+              "RelativeToolTip": "ArsTechnia.API\\Models\\Reserva.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-27T16:35:35.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "HistoricoReserva.cs",
+              "DocumentMoniker": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Models\\HistoricoReserva.cs",
+              "RelativeDocumentMoniker": "ArsTechnia.API\\Models\\HistoricoReserva.cs",
+              "ToolTip": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Models\\HistoricoReserva.cs",
+              "RelativeToolTip": "ArsTechnia.API\\Models\\HistoricoReserva.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-27T16:35:31.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Equipamento.cs",
+              "DocumentMoniker": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Models\\Equipamento.cs",
+              "RelativeDocumentMoniker": "ArsTechnia.API\\Models\\Equipamento.cs",
+              "ToolTip": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\Models\\Equipamento.cs",
+              "RelativeToolTip": "ArsTechnia.API\\Models\\Equipamento.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-27T16:35:29.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "HistoricoReservaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\DTOs\\HistoricoReservaDTO.cs",
+              "RelativeDocumentMoniker": "ArsTechnia.API\\DTOs\\HistoricoReservaDTO.cs",
+              "ToolTip": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\DTOs\\HistoricoReservaDTO.cs",
+              "RelativeToolTip": "ArsTechnia.API\\DTOs\\HistoricoReservaDTO.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAiwBgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T13:07:59.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "LocalDTO.cs",
+              "DocumentMoniker": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\DTOs\\LocalDTO.cs",
+              "RelativeDocumentMoniker": "ArsTechnia.API\\DTOs\\LocalDTO.cs",
+              "ToolTip": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\DTOs\\LocalDTO.cs",
+              "RelativeToolTip": "ArsTechnia.API\\DTOs\\LocalDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T13:08:26.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "DecidirReservaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\DTOs\\DecidirReservaDTO.cs",
+              "RelativeDocumentMoniker": "ArsTechnia.API\\DTOs\\DecidirReservaDTO.cs",
+              "ToolTip": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\DTOs\\DecidirReservaDTO.cs",
+              "RelativeToolTip": "ArsTechnia.API\\DTOs\\DecidirReservaDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T13:07:06.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "CriarReservaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\DTOs\\CriarReservaDTO.cs",
+              "RelativeDocumentMoniker": "ArsTechnia.API\\DTOs\\CriarReservaDTO.cs",
+              "ToolTip": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\DTOs\\CriarReservaDTO.cs",
+              "RelativeToolTip": "ArsTechnia.API\\DTOs\\CriarReservaDTO.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAA6wBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T11:58:55.48Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ReservaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\DTOs\\ReservaDTO.cs",
+              "RelativeDocumentMoniker": "ArsTechnia.API\\DTOs\\ReservaDTO.cs",
+              "ToolTip": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\DTOs\\ReservaDTO.cs",
+              "RelativeToolTip": "ArsTechnia.API\\DTOs\\ReservaDTO.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAcwCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T13:15:17.339Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\DTOs\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "ArsTechnia.API\\DTOs\\LoginDTO.cs",
+              "ToolTip": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\DTOs\\LoginDTO.cs",
+              "RelativeToolTip": "ArsTechnia.API\\DTOs\\LoginDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T13:07:32.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "CriarUsuarioDTO.cs",
+              "DocumentMoniker": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\DTOs\\CriarUsuarioDTO.cs",
+              "RelativeDocumentMoniker": "ArsTechnia.API\\DTOs\\CriarUsuarioDTO.cs",
+              "ToolTip": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\DTOs\\CriarUsuarioDTO.cs",
+              "RelativeToolTip": "ArsTechnia.API\\DTOs\\CriarUsuarioDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T16:43:07.05Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\appsettings.json",
+              "RelativeDocumentMoniker": "ArsTechnia.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\54535214816\\Downloads\\ArsTechnia\\ArsTechnia.API\\appsettings.json",
+              "RelativeToolTip": "ArsTechnia.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-11-11T11:20:24.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "secrets.json",
+              "DocumentMoniker": "C:\\Users\\54535214816\\AppData\\Roaming\\Microsoft\\UserSecrets\\3e955c45-4651-4e3b-a39d-1fb8fbe9d2c1\\secrets.json",
+              "RelativeDocumentMoniker": "..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\3e955c45-4651-4e3b-a39d-1fb8fbe9d2c1\\secrets.json",
+              "ToolTip": "C:\\Users\\54535214816\\AppData\\Roaming\\Microsoft\\UserSecrets\\3e955c45-4651-4e3b-a39d-1fb8fbe9d2c1\\secrets.json",
+              "RelativeToolTip": "..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\3e955c45-4651-4e3b-a39d-1fb8fbe9d2c1\\secrets.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-11-11T11:26:35.314Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
