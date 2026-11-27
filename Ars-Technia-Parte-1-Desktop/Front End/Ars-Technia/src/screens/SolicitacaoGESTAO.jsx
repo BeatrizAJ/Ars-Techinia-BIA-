@@ -3,24 +3,12 @@ import React from 'react';
 import Heading from '../components/Heading.jsx';
 
 const pedidos = [
-  {
+  ...Array.from({ length: 4 }, () => ({
     professor: 'Alexia Vitória',
-    sala: 'Sala 14',
-    data: '13/11/2026',
-    horario: '08:30 às 11:30'
-  },
-  {
-    professor: 'Jéssica Almeida',
-    sala: 'Laboratório de Informática',
-    data: '14/11/2026',
-    horario: '13:00 às 16:00'
-  },
-  {
-    professor: 'Carlos Eduardo',
-    sala: 'Sala 08',
-    data: '15/11/2026',
-    horario: '09:00 às 12:00'
-  }
+    sala: 'Sala 01',
+    data: 'Hoje',
+    horario: '14:05',
+  })),
 ];
 
 export default function SolicitacaoGESTAO({ go }) {
@@ -30,8 +18,9 @@ export default function SolicitacaoGESTAO({ go }) {
       {/* Cabeçalho desktop */}
       <div className="solicitacao-heading-desktop">
         <Heading
-          title="Solicitações"
-          desc="Consulte e analise os pedidos de reserva enviados pelos professores."
+          eyebrow="GESTÃO"
+          title="Notificações"
+          desc="Consulte as solicitações de reserva recebidas dos professores."
         />
       </div>
 
@@ -46,8 +35,7 @@ export default function SolicitacaoGESTAO({ go }) {
 
       {/* Cabeçalho dos resultados */}
       <div className="results-head solicitacao-gestao-results">
-        <h2>Solicitações recebidas</h2>
-        <span>03 pendentes</span>
+        <h2>Hoje · 4 solicitações</h2>
       </div>
 
       <div className="notification-layout">
@@ -68,13 +56,13 @@ export default function SolicitacaoGESTAO({ go }) {
               {/* Informações desktop */}
               <div className="request-info">
                 <small>
-                  {pedido.data} • {pedido.horario}
+                  {pedido.data} · {pedido.horario}
                 </small>
 
                 <b>{pedido.sala}</b>
 
                 <p>
-                  Professor: {pedido.professor}
+                  Professora <strong>{pedido.professor}</strong>
                 </p>
               </div>
 
@@ -82,15 +70,13 @@ export default function SolicitacaoGESTAO({ go }) {
               <div className="request-mobile-info">
 
                 <div className="request-mobile-top">
-                  <small>
-                    {pedido.data} · {pedido.horario}
-                  </small>
+                  <small>{pedido.data} · {pedido.horario}</small>
 
                   <b>{pedido.sala}</b>
                 </div>
 
                 <p>
-                  Professor <strong>{pedido.professor}</strong>
+                  Professora <strong>{pedido.professor}</strong>
                 </p>
 
               </div>
@@ -117,20 +103,27 @@ export default function SolicitacaoGESTAO({ go }) {
         <aside className="info-column">
 
           <div className="info-callout">
-            <h3>Central de solicitações</h3>
+            <span className="solicitacao-gestao-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <rect x="5" y="4" width="14" height="17" rx="2" />
+                <path d="M9 4V3h6v1M9 10h6M9 14h6M9 18h4" />
+              </svg>
+            </span>
+
+            <h3>Área de gestão</h3>
 
             <p>
-              Analise os pedidos recebidos e escolha se a reserva
-              poderá ser realizada.
+              Acompanhe as solicitações dos professores e abra os detalhes
+              para consultar as informações de cada reserva.
             </p>
           </div>
 
           <div className="info-box">
-            <b>Informações</b>
+            <b>Solicitações de salas</b>
 
             <p>
-              Verifique a disponibilidade da sala antes de aprovar
-              uma solicitação.
+              O nome do professor e o horário de envio estão disponíveis em
+              cada solicitação.
             </p>
           </div>
 

@@ -1,6 +1,6 @@
 import React from 'react';
 export default function CadastroDeConta({ go }) {
-  return <div className="auth-page"><div className="auth-brand"><img src="/assets/LogoComNome.png" alt="Ars-Technia" /></div>
+  return <div className="auth-page"><div className="auth-brand"><img className="auth-brand-desktop" src="/assets/LogoComNome.png" alt="Ars-Technia" /><img className="auth-brand-mobile" src="/assets/LogoArsTechnia.png" alt="" aria-hidden="true" /></div>
     <form className="auth-form" onSubmit={e => { e.preventDefault(); go('login'); }}>
       <h1>Criar Conta</h1><p>Preencha os dados abaixo para acessar sua conta.</p>
       <label>Nome Completo<input required placeholder="Digite seu nome completo" /></label>

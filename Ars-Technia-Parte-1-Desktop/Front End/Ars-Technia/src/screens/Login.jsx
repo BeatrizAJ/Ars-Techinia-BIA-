@@ -50,8 +50,15 @@ export default function Login({ go, onRoleChange }) {
 
       <div className="auth-brand">
         <img
+          className="auth-brand-desktop"
           src="/assets/LogoComNome.png"
           alt="Ars-Technia"
+        />
+        <img
+          className="auth-brand-mobile"
+          src="/assets/LogoArsTechnia.png"
+          alt=""
+          aria-hidden="true"
         />
       </div>
 

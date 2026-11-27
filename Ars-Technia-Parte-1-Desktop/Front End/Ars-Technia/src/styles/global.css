@@ -3743,3 +3743,280 @@ button {
         font-size: 27px;
     }
 }
+
+/* Login adapts below the existing desktop layout without changing its rules. */
+.auth-brand-mobile {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    body {
+        min-width: 0;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1000px) {
+    .auth-page {
+        min-height: 100vh;
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-rows: minmax(220px, 34vh) 1fr;
+        background: linear-gradient(180deg, #fff4eb 0%, #fff4eb 53%, #dce8ed 100%);
+    }
+
+    .auth-brand {
+        background: transparent;
+        padding: 28px 24px 0;
+    }
+
+    .auth-brand-desktop {
+        display: none;
+    }
+
+    .auth-brand .auth-brand-mobile {
+        display: block;
+        width: clamp(150px, 25vw, 220px);
+        height: 170px;
+        object-fit: contain;
+    }
+
+    .auth-form {
+        align-self: start;
+        width: min(100% - 64px, 560px);
+        min-height: 0;
+        padding: 8px 0 48px;
+    }
+
+    .auth-form h1 {
+        font-size: 32px;
+    }
+
+    .auth-form > p {
+        font-size: 18px;
+        line-height: 1.4;
+        margin-bottom: 38px;
+    }
+
+    .auth-form label {
+        font-size: 16px;
+        margin-bottom: 18px;
+    }
+
+    .auth-form input:not([type="checkbox"]) {
+        height: 54px;
+    }
+
+    .auth-links {
+        gap: 12px;
+        margin: 4px 0 30px;
+    }
+
+    .auth-links button,
+    .auth-links b {
+        min-height: 24px;
+    }
+
+    .auth-submit {
+        height: 56px;
+        min-height: 48px;
+    }
+}
+
+@media (max-width: 600px) {
+    .auth-page {
+        min-height: 100vh;
+        min-height: 100svh;
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(160deg, #fff4eb 0%, #fff4eb 56%, #dce8ed 100%);
+        padding: 0 30px max(40px, 14vh);
+    }
+
+    .auth-brand {
+        flex: 0 0 176px;
+        background: transparent;
+        padding-top: 16px;
+    }
+
+    .auth-brand-desktop {
+        display: none;
+    }
+
+    .auth-brand .auth-brand-mobile {
+        display: block;
+        width: 220px;
+        max-width: 72vw;
+        height: 150px;
+        object-fit: contain;
+    }
+
+    .auth-form {
+        align-self: stretch;
+        width: 100%;
+        margin: 0;
+        padding: 8px 0 0;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+
+    .auth-form h1 {
+        font-size: clamp(25px, 6.6vw, 29px);
+        line-height: 1.2;
+        text-align: center;
+        margin: 0 0 6px;
+    }
+
+    .auth-form > p {
+        font-size: 15px;
+        line-height: 1.25;
+        text-align: center;
+        margin: 0 0 18px;
+    }
+
+    .auth-form label {
+        color: #080808;
+        font-size: 16px;
+        gap: 15px;
+        margin-bottom: 18px;
+    }
+
+    .auth-form input:not([type="checkbox"]) {
+        width: 100%;
+        height: 53px;
+        min-height: 48px;
+        border-radius: 13px;
+        font-size: 14px;
+        padding: 0 15px;
+    }
+
+    .auth-links {
+        gap: 8px;
+        color: #343b66;
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .auth-links button {
+        min-height: 28px;
+        color: #080808;
+        padding: 0;
+        font-size: 14px;
+    }
+
+    .auth-links span {
+        line-height: 1.55;
+    }
+
+    .auth-links b {
+        display: block;
+        min-height: 24px;
+        margin: 0;
+        color: #080808;
+    }
+
+    .auth-submit {
+        width: calc(100% + 36px);
+        min-height: 52px;
+        height: 56px;
+        flex: 0 0 56px;
+        margin: auto -18px 0;
+        border-radius: 14px;
+        font-size: 17px;
+    }
+}
+
+/* Solicitações da gestão: align both breakpoints with the supplied references. */
+.solicitacao-gestao .solicitacao-heading-mobile { display: none; }
+.solicitacao-gestao .solicitacao-heading-desktop .page-heading > small {
+    display: block; color: #357dbf; font-size: 12px; font-weight: 700; margin-bottom: 8px;
+}
+.solicitacao-gestao .solicitacao-heading-desktop .page-heading h1 {
+    font-size: 36px; line-height: 1.15; margin-bottom: 10px;
+}
+.solicitacao-gestao .solicitacao-heading-desktop .page-heading p { font-size: 15px; margin: 0; }
+.solicitacao-gestao .solicitacao-gestao-results { display: flex; margin: 32px 0 18px; }
+.solicitacao-gestao .solicitacao-gestao-results h2 { font-size: 18px; margin: 0; }
+.solicitacao-gestao .notification-layout { grid-template-columns: minmax(0, 1fr) 280px; gap: 28px; }
+.solicitacao-gestao .solicitacao-gestao-lista { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+.solicitacao-gestao .notification-card {
+    height: 126px; min-height: 126px; margin: 0; padding: 18px 19px;
+    border-radius: 17px; background: #fff4eb; border: 1px solid #a6c0d2;
+}
+.solicitacao-gestao .notification-card > .request-status { display: none; }
+.solicitacao-gestao .notification-card .request-info { display: flex; flex-direction: column; gap: 2px; }
+.solicitacao-gestao .request-info small { font-size: 12px; }
+.solicitacao-gestao .request-info > b { font-size: 16px; }
+.solicitacao-gestao .request-info p { margin: 12px 0 0; font-size: 14px; }
+.solicitacao-gestao .request-info p strong { font-weight: 700; }
+.solicitacao-gestao .request-mobile-info { display: none; }
+.solicitacao-gestao .notification-card > .primary-button {
+    height: 42px; min-height: 42px; margin: -8px 0 0 auto; padding: 0 9px;
+    border-radius: 13px; font-size: 16px; white-space: nowrap;
+}
+.solicitacao-gestao .info-column { margin-top: -42px; }
+.solicitacao-gestao .solicitacao-gestao-icon { display: block; width: 28px; height: 28px; }
+.solicitacao-gestao .solicitacao-gestao-icon svg {
+    width: 100%; height: 100%; stroke: currentColor; stroke-width: 1.8;
+    stroke-linecap: round; stroke-linejoin: round;
+}
+.solicitacao-gestao .info-callout h3 { margin: 18px 0; }
+
+@media (max-width: 600px) {
+    .solicitacao-gestao { padding-bottom: 0; }
+    .solicitacao-gestao .solicitacao-heading-desktop,
+    .solicitacao-gestao .solicitacao-gestao-results,
+    .solicitacao-gestao .info-column { display: none !important; }
+    .solicitacao-gestao .solicitacao-heading-mobile { display: block; margin: 0 0 34px; }
+    .solicitacao-gestao .solicitacao-heading-mobile .page-heading { margin: 0; }
+    .solicitacao-gestao .solicitacao-heading-mobile .page-heading > small {
+        display: block; margin: 0 0 2px; color: #357dbf; font-size: 13px;
+        line-height: 1.3; font-weight: 700;
+    }
+    .solicitacao-gestao .solicitacao-heading-mobile .page-heading h1 {
+        margin: 0; padding-left: 6px; font-size: 21px; line-height: 1.2;
+    }
+    .solicitacao-gestao .notification-layout { display: block; width: 100%; }
+    .solicitacao-gestao .solicitacao-gestao-lista {
+        display: flex; flex-direction: column; gap: 28px; width: 100%;
+    }
+    .solicitacao-gestao .notification-card {
+        position: relative; display: grid; grid-template-columns: minmax(0, 1fr) 123px;
+        grid-template-rows: auto auto; column-gap: 12px; row-gap: 12px;
+        width: 100%; height: 145px; min-height: 145px; padding: 20px 6px 16px 19px;
+        align-items: start; border-radius: 17px;
+        box-shadow: 0 8px 18px rgba(40, 93, 140, 0.08);
+    }
+    .solicitacao-gestao .notification-card .request-info { display: none !important; }
+    .solicitacao-gestao .request-mobile-info { display: contents; }
+    .solicitacao-gestao .request-mobile-top {
+        grid-column: 1; grid-row: 1; display: flex; flex-direction: column;
+        align-items: flex-start; min-width: 0; gap: 3px;
+    }
+    .solicitacao-gestao .request-mobile-top small {
+        font-size: 11px; line-height: 1.4; font-weight: 600; white-space: nowrap;
+    }
+    .solicitacao-gestao .request-mobile-top > b { font-size: 16px; line-height: 1.3; font-weight: 700; }
+    .solicitacao-gestao .request-mobile-info > p {
+        grid-column: 1 / -1; grid-row: 2; margin: 0; font-size: 14px; line-height: 1.4;
+    }
+    .solicitacao-gestao .notification-card > .primary-button {
+        grid-column: 2; grid-row: 1; justify-self: end; width: 123px; min-width: 123px;
+        height: 42px; min-height: 42px; margin: -11px 0 0; padding: 0 8px;
+        border-radius: 13px; font-size: 16px;
+    }
+    .app-shell {
+        padding-bottom: 102px !important;
+        background: linear-gradient(180deg, #fff4eb 0%, #fff4eb 48%, #dce8ed 100%);
+    }
+    .main-area { padding: 24px 30px 36px; }
+    .sidebar { height: 102px !important; min-height: 102px !important; padding: 8px 5px 10px !important; }
+}
+
+@media (max-width: 390px) {
+    .solicitacao-gestao .notification-card {
+        grid-template-columns: minmax(0, 1fr) 108px; padding-left: 15px; column-gap: 8px;
+    }
+    .solicitacao-gestao .notification-card > .primary-button {
+        width: 108px; min-width: 108px; font-size: 14px;
+    }
+}
